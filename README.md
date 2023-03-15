@@ -1,6 +1,13 @@
 # CODINGTEST
 Python Coding Test.
 
+### 문제 코드
+- code : 문제번호 + 사이트 _ex) p(프로그래머스), b(백준), c(코드업)_
+- Problem : 문제 링크
+- Solution : 해결한 마크다운 문서
+- tag : 관련 분류 문제 유형
+- date : 날짜
+
 # 💡 Python Coding TEst
 |No|Problem|Solution|Tag|
 |:---:|:---:|:---:|:---:|
