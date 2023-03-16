@@ -16,4 +16,4 @@ Python Coding Test.
 
 # 참고자료
 - [복잡도 관한 설명](https://github.com/dustin-kang/devStudy/blob/main/data_structure/complexity.md)
-- [기본 파이썬 문법]()
+- [기본 파이썬 문법](https://github.com/dustin-kang/CODINGTEST/blob/Python/Pythoncode.ipynb)
