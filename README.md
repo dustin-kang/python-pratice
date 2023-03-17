@@ -13,6 +13,7 @@ Python Coding Test.
 |:---:|:---:|:---:|:---:|
 |1|[행렬의 덧셈](https://school.programmers.co.kr/learn/courses/30/lessons/12950)|[행렬의 덧셈 풀이](https://github.com/dustin-kang/CODINGTEST/blob/Python/python/Matrix/12950p_행렬의_덧셈.py)|`연산`|
 |2|[카펫](https://school.programmers.co.kr/learn/courses/30/lessons/42842)|[카펫 풀이]()|`완전탐색`|
+|3|[언제까지 더해야할까](https://codeup.kr/problem.php?id=6079)|[풀이](https://github.com/dustin-kang/CODINGTEST/issues/3)|`제어문`|
 
 # 참고자료
 - [복잡도 관한 설명](https://github.com/dustin-kang/devStudy/blob/main/data_structure/complexity.md)
