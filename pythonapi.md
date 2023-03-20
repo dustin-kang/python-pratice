@@ -1,5 +1,8 @@
 # 파이썬 웹 요청하기
 
+<img width="827" alt="image" src="https://user-images.githubusercontent.com/55238671/226222544-2f3eb7cc-42af-438b-a0e1-a87d50a75669.png">
+
+
 ### CRUD
 | HTTP 메서드 | 설명 | 사용 예 |
 | --- | --- | --- |
