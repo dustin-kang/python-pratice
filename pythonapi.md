@@ -96,3 +96,18 @@ print(data)
 
 
 ## REST API 호출 실습
+
+```python
+import requests
+
+target = "http://jsonplaceholder.typicode.com/users"
+response = requests.get(url = target)
+
+# 응답 데이터인 json 형식을 파이써 객체로 변환
+data = response.json()
+
+# 이름정보를 name_list라는 리스트에 담기
+name_list = []
+for user in data:
+    name_list.append(user['name']) 
+```
