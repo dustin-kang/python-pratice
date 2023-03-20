@@ -15,7 +15,9 @@ Python Coding Test.
 |2|[카펫](https://school.programmers.co.kr/learn/courses/30/lessons/42842)|[카펫 풀이]()|`완전탐색`|
 |3|[언제까지 더해야할까](https://codeup.kr/problem.php?id=6079)|[풀이](https://github.com/dustin-kang/CODINGTEST/issues/3)|`제어문`|
 |4|[함께 문제 푸는 날](https://codeup.kr/problem.php?id=6091)|[풀이](https://github.com/dustin-kang/CODINGTEST/issues/4)|`제어문`|
+|5|[성실한 개미](https://codeup.kr/problem.php?id=6098)|[풀이](https://github.com/dustin-kang/CODINGTEST/issues/5)|`리스트` `제어문`|
 
 # 참고자료
 - [복잡도 관한 설명](https://github.com/dustin-kang/devStudy/blob/main/data_structure/complexity.md)
 - [기본 파이썬 문법](https://github.com/dustin-kang/CODINGTEST/blob/Python/Pythoncode.ipynb)
+- [개발형 코딩 테스트: API 호출](https://github.com/dustin-kang/CODINGTEST/blob/Python/pythonapi.md)
