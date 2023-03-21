@@ -1,6 +1,10 @@
 # CODINGTEST
 Python Coding Test.
 
+- [CodingTest]()
+- [Algorithm]()
+- [Reference]()
+
 ### 문제 코드
 - code : 문제번호 + 사이트 _ex) p(프로그래머스), b(백준), c(코드업)_
 - Problem : 문제 링크
@@ -17,7 +21,13 @@ Python Coding Test.
 |4|[함께 문제 푸는 날](https://codeup.kr/problem.php?id=6091)|[풀이](https://github.com/dustin-kang/CODINGTEST/issues/4)|`제어문`|
 |5|[성실한 개미](https://codeup.kr/problem.php?id=6098)|[풀이](https://github.com/dustin-kang/CODINGTEST/issues/5)|`리스트` `제어문`|
 
+# 📌 Algorithm 이론
+
+- math-algorithm
+  - [judje prime number (소수 판별 알고리즘)]()
+
 # 참고자료
 - [복잡도 관한 설명](https://github.com/dustin-kang/devStudy/blob/main/data_structure/complexity.md)
 - [기본 파이썬 문법](https://github.com/dustin-kang/CODINGTEST/blob/Python/Pythoncode.ipynb)
 - [개발형 코딩 테스트: API 호출](https://github.com/dustin-kang/CODINGTEST/blob/Python/pythonapi.md)
+- [👨‍💻 이것이 취업을 위한 코딩테스트다](https://github.com/ndb796/python-for-coding-test)
