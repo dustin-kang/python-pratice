@@ -24,6 +24,7 @@
 
 - math-algorithm
   - [judje prime number (소수 판별 알고리즘)](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/math-algorithm/judge_prime_number.md)
+  - [Seive of Eratosthenes(에라토스테네스의 체 - 범위내 소수 판별)](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/math-algorithm/sieve_of_eratosthenes.md)
 
 # 참고자료
 - [복잡도 관한 설명](https://github.com/dustin-kang/devStudy/blob/main/data_structure/complexity.md)
