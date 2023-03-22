@@ -28,6 +28,11 @@ print(is_prime_number(7)) # 1, 7
 
 <img width="455" alt="image" src="https://user-images.githubusercontent.com/55238671/226515215-7a543611-6d41-4c96-a70a-f7fa0c6d1ebe.png">
 
+- 1 * 16 = 16
+- 2 * 8 = 16
+- 4 * 4 = 16
+- 8 * 2 = 16
+- 16 * 1 = 16
 
 위 그림, 16의 약수를 보게되면 양쪽이 4를 기준으로 서로 대칭이라는 것을 알 수 있어요. 그렇다면, 우리는 굳이 1~ 16까지 확인을 안해도(반만 나누어 떨어지는지 확인해도) 약수인지 확인이 가능하죠. 이렇게 작성하게 되면, **시간 복잡도도 반으로 줄일 수 있습니다.**
 
@@ -36,7 +41,7 @@ import math
 
 def is_prime_number(x):
     for i in range(2, math.sqrt(x)+1):
-        if x % 2 == 0:
+        if x % i == 0:
             return False
     return True
 
