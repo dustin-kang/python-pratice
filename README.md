@@ -5,7 +5,7 @@
 - [Reference](https://github.com/dustin-kang/Programming-Team-Notes#참고자료)
 
 ### 문제 코드
-- code : 문제번호 + 사이트 _ex) p(프로그래머스), b(백준), c(코드업)_
+- code : 문제번호 + 사이트 _ex) PR(프로그래머스), BOJ(백준), CU(코드업)_
 - Problem : 문제 링크
 - Solution : 해결한 마크다운 문서
 - tag : 관련 분류 문제 유형
@@ -19,6 +19,8 @@
 |3|[언제까지 더해야할까](https://codeup.kr/problem.php?id=6079)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/3)|`제어문`|
 |4|[함께 문제 푸는 날](https://codeup.kr/problem.php?id=6091)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/4)|`제어문`|
 |5|[성실한 개미](https://codeup.kr/problem.php?id=6098)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/5)|`리스트` `제어문`|
+|6|[소수구하기](https://www.acmicpc.net/problem/1929)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/6)|`수학` `소수 판별`|
+|7|[지그재그 입력](https://codeup.kr/problem.php?id=1503)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/7)|`배열`|
 
 # 📌 Algorithm 이론
 
