@@ -1,4 +1,4 @@
-# Programming Team Notes
+# 👨‍💻 Programming Team Notes
 
 - [CodingTest](https://github.com/dustin-kang/Programming-Team-Notes#-python-coding-test)
 - [Algorithm](https://github.com/dustin-kang/Programming-Team-Notes#-algorithm-이론)
