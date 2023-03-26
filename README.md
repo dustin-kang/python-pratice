@@ -21,6 +21,7 @@
 |5|[성실한 개미](https://codeup.kr/problem.php?id=6098)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/5)|`리스트` `제어문`|
 |6|[소수구하기](https://www.acmicpc.net/problem/1929)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/6)|`수학` `소수 판별`|
 |7|[지그재그 입력](https://codeup.kr/problem.php?id=1503)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/7)|`배열`|
+|8|[암호 만들기](https://www.acmicpc.net/problem/1759)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/8)|`배열`|
 
 # 📌 Algorithm 이론
 
