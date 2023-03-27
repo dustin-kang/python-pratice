@@ -48,3 +48,4 @@ for i in range(2, n+1):
 
 
  #### [👨‍💻 관련 문제 확인하기 소수 구하기](https://github.com/dustin-kang/Programming-Team-Notes/issues/6)
+- [간단하게 구한 에라토스테네스의 체](https://github.com/dustin-kang/Programming-Team-Notes/issues/6#issuecomment-1484809963)
