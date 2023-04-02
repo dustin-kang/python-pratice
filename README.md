@@ -5,7 +5,7 @@
 - [Reference](https://github.com/dustin-kang/Programming-Team-Notes#참고자료)
 
 ### 문제 코드
-- code : 문제번호 + 사이트 _ex) PR(프로그래머스), BOJ(백준), CU(코드업)_
+- code : 문제번호 + 사이트 _ex) PG(프로그래머스), BOJ(백준), CU(코드업)_
 - Problem : 문제 링크
 - Solution : 해결한 마크다운 문서
 - tag : 관련 분류 문제 유형
@@ -22,7 +22,8 @@
 |6|[소수구하기](https://www.acmicpc.net/problem/1929)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/6)|`수학` `소수 판별`|
 |7|[지그재그 입력](https://codeup.kr/problem.php?id=1503)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/7)|`배열`|
 |8|[암호 만들기](https://www.acmicpc.net/problem/1759)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/8)|`배열`|
-
+|9|[진료 순서 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/120835)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/10)|`배열`|
+|10|[2차원 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/120842)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/11)|`배열`|
 # 📌 Algorithm 이론
 
 - math-algorithm
