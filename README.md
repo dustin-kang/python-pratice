@@ -24,6 +24,11 @@
 |8|[암호 만들기](https://www.acmicpc.net/problem/1759)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/8)|`배열`|
 |9|[진료 순서 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/120835)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/10)|`배열`|
 |10|[2차원 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/120842)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/11)|`배열`|
+|11|[구슬을 나누는 경우의 수](https://school.programmers.co.kr/learn/courses/30/lessons/120840)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/12)|`수학`|
+|12|[소인수분해](https://school.programmers.co.kr/learn/courses/30/lessons/120852)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/13)|`수학`|
+|13|[가까운 수](https://school.programmers.co.kr/learn/courses/30/lessons/120890)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/14)|`수학` `제어문`|
+|14|[직사각형 넓이 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/120860)|[풀이](https://github.com/dustin-kang/Programming-Team-Notes/issues/15)|`수학` `배열`|
+
 # 📌 Algorithm 이론
 
 - math-algorithm
