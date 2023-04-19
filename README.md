@@ -18,6 +18,7 @@
 
 <h4>PCCE(코딩 필수 역량) Python3 Lv4/Lv4 등급을 달성했어요.</h4>
 
+![ic-pcce-lv4-f5f22bf0](https://user-images.githubusercontent.com/55238671/233020425-419f46c6-6f4f-4825-8112-6e911b8fe6fc.png)
 
 
 </details>
@@ -39,5 +40,6 @@
 - [기본 파이썬 문법](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/Pythoncode.ipynb)
 - [개발형 코딩 테스트: API 호출](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/pythonapi.md)
 - [👨‍💻 이것이 취업을 위한 코딩테스트다](https://github.com/ndb796/python-for-coding-test)
+
 
 
