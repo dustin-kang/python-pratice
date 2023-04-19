@@ -3,7 +3,6 @@
 """
 data = [1, 2, 3, 3, 5, 1, 6, 2]
 
-
 def solution(data):
     answer = []
     i_sum = 0
