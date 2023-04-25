@@ -12,7 +12,7 @@
 
 ### 입력
 ```
-5 8 5
+5 8 3
 2 4 5 4 6
 ```
 ### 출력
@@ -22,5 +22,45 @@
 
 ## 문제 풀이
 ```python
+n, m, k = map(int, input().split(" "))
+array = list(map(int, input().split(" ")))
 
+array.sort() # 입력 받은 수 정렬하기
+count = 0
+answer = 0
+
+while m > 0: # 숫자 횟수가 m번 다채워지면 종료
+    if count == k: # 최대 연속 덧셈 횟수를 채운 경우
+        count = 0
+        m -= 1 # 더할 때 마다 1씩 빼기
+        answer += array[-2] # 두번째 큰 수 더하기
+        print(f'+ {array[-2]}', end ='')
+    else : # 그렇지 않은 경우 
+        m -= 1
+        count += 1
+        answer += array[-1] # 첫번째 큰 수 더하기
+        print(f'+ {array[-1]}', end ='')
+print()
+print(answer)
 ```
+
+### [📔answer]()
+```python
+n , m , k = map(int, input().split())
+data = list(map(int, input().split()))
+
+data.sort()
+
+first = data[n-1]
+second = data[n-2]
+
+# 가장 큰 수가 더해지는 횟수 구하기
+count = int(m / (k+1)) * k
+count += m % (k + 1)
+
+result = 0
+result += count * first # 가장 큰 수 더하기
+result += (m - count) * second # 두번째로 큰 수 더하기
+print(result)
+```
+
