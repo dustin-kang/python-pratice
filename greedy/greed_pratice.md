@@ -44,7 +44,13 @@ print()
 print(answer)
 ```
 
-### [📔answer]()
+## [📔answer](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/greedy/p_big_number.py)
+
+### 반복되는 수열 찾기
+이 문제에서는 `6 6 6 5` 로 덧셈이 반복되는 걸 알 수 있습니다. 
+
+<img width="495" alt="image" src="https://user-images.githubusercontent.com/55238671/234258369-c8161ffc-8303-495c-ab79-319185d5864b.png">
+
 ```python
 n , m , k = map(int, input().split())
 data = list(map(int, input().split()))
