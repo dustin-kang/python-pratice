@@ -32,8 +32,22 @@
   - [Range Sum(접두사 합을 이용한 구간 합)](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/math-algorithm/range_sum.md)
   - [nPr and nCr(라이브러리를 이용한 순열과 조합)](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/math-algorithm/itertools.md)
 - Greedy
-  - Greedy Alogrithm
-  - rule of Big Number
+  - [Greedy Alogrithm](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/greedy/greedy.md)
+  - [rule of Big Number](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/greedy/greed_pratice.md#실전1-큰수의-법칙)
+
+
+<details>
+<summary> Python vscode settings </summary>
+<h4> 디버깅 및  실행 단축키</h4>
+<li> 디버깅 단축키  : cmd + shift + d </li>
+<li> 시간  측정 : time python3 파이썬.py </li>
+
+<h4> 리눅스 명령어로 테스트 파일 만들기 </h4>
+
+1. 디버킹 아이콘 → `launch.json` 파일 만들기
+2. 메인 디렉토리에 input, output 파일, main.py 파일을 만들기
+3. launch.json 에 input을 통해 output을 내보내는 방식으로 리눅스 명령어 조절하기 `"args" : ["<", "input.txt", ">", "output.txt"]`
+</details>
 
 # 참고자료
 - [복잡도 관한 설명](https://github.com/dustin-kang/devStudy/blob/main/data_structure/complexity.md)
