@@ -33,7 +33,9 @@
   - [nPr and nCr(라이브러리를 이용한 순열과 조합)](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/math-algorithm/itertools.md)
 - Greedy
   - [Greedy Alogrithm](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/greedy/greedy.md)
-  - [rule of Big Number](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/greedy/greed_pratice.md#실전1-큰수의-법칙)
+  - 다익스트라 알고리즘
+  - 크루스칼 알고리즘
+
 
 
 <details>
