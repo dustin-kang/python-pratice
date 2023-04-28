@@ -6,9 +6,9 @@
 
 대표적인 구현 유형으로 두가지가 있다.
 #### 완전 탐색
-모든 경우의 수를 주저 없이 다 계산하는 방법 [시각 문제]()
+모든 경우의 수를 주저 없이 다 계산하는 방법 [시각 문제](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/implementation/implementation.md#-시각)
 #### 시뮬레이션
-문제에서 제시한 알고리즘을 한단계 씩 차례대로 직접 수행하는 문제 [상하좌우 문제]()
+문제에서 제시한 알고리즘을 한단계 씩 차례대로 직접 수행하는 문제 [상하좌우 문제](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/implementation/implementation.md#-상하좌우)
 
 ## 메모리 제약 사항
 >  자바나 C/C++ 언어에서는 자료형의 표현 범위 제약이 있다. 예를 들어, 2,147,438,647 보다 더 큰수를 처리하기 위해 `long long` 자료형을 사용한다. 이보다 더 큰 수를 담으려면 `BigInteger` 라이브러리를 지원하지만 이는 코딩테스트에 작성하기엔 어렵기 때문에 잘 사용하지 않는다.
@@ -36,6 +36,9 @@
 |1초|128MB|
 
 여행가 A는 N X N 크기의 정사각형 공간 위에 서있다. 이 공간은 1 X 1 크기의 정사각형으로 나누어져 있는데 가장 왼쪽 위 좌표는 (1,1)이며, 가장 오른쪽 아래 좌표는 (N,N)이다. 여행가는 상하좌우로 움직일 수 있으며 시작 좌표는 (1,1)이다. 
+
+<img width="619" alt="image" src="https://user-images.githubusercontent.com/55238671/235070052-fb0ea2ad-d1f2-4057-98fa-eba1f3881c71.png">
+
 
 - 첫째 줄에는 공간의 크기 `N`이 주어진다. 둘째 줄에는 이동 계획이 주어진다. 
 - 줄을 기준으로 `L` `R` `U` `D`로 움직일 수 있다.
