@@ -35,7 +35,8 @@
   - [Greedy Alogrithm](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/greedy/greedy.md)
   - 다익스트라 알고리즘
   - 크루스칼 알고리즘
-
+- Implementation
+  - [완전탐색, 시뮬레이션](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/implementation/implementation.md)
 
 
 <details>
