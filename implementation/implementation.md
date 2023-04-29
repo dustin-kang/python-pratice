@@ -85,6 +85,8 @@ print(x, y)
 - 이동횟수가 N번인 경우 시간 복잡도는 $O(N)$이며 넉넉한 편입니다.
 - 이러한 문제는 시뮬레이션 유형에 분류되며 구현이 중요한 문제 유형입니다. 
 
+- [리보그 월드](https://reeborg.ca/reeborg.html?lang=fr&mode=python&menu=%2Fworlds%2Fmenus%2Fselect_collection_fr.json&name=Seul&url=%2Fworlds%2Ftutorial_fr%2Fseul.json)
+
 ## 👨‍💻 시각
 
 |시간 제한|메모리 제한|
