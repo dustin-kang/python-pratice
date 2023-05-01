@@ -13,6 +13,9 @@
 
 예를 들어, 아래 그림처럼 나이트가 c2에 있다면 경우의 수는 6가지이다.
 
+<img width="613" alt="image" src="https://user-images.githubusercontent.com/55238671/235411395-8adc7227-3009-4266-b37d-08406e090fa1.png">
+
+
 
 ### 입력
 ```
@@ -65,33 +68,12 @@ for step in steps:
 
 print(result)
 ```
+
+<img width="676" alt="image" src="https://user-images.githubusercontent.com/55238671/235411435-cfabcdcc-525a-43d8-92a7-17bba78b13bd.png">
+
+
 앞 [상하좌우](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/implementation/implementation.md#-상하좌우) 문제에서는 `dx,dy` 리스트를 선언하여 이동 방향을 기록 하였고 이번에는 `steps` 변수가 dx와 dy의 기능을 대신하여 사용한다.
 
-
-
-### 반복되는 수열 찾기
-이 문제에서는 `6 6 6 5` 로 덧셈이 반복되는 걸 알 수 있습니다. 
-
-<img width="495" alt="image" src="https://user-images.githubusercontent.com/55238671/234258369-c8161ffc-8303-495c-ab79-319185d5864b.png">
-
-```python
-n , m , k = map(int, input().split())
-data = list(map(int, input().split()))
-
-data.sort()
-
-first = data[n-1]
-second = data[n-2]
-
-# 가장 큰 수가 더해지는 횟수 구하기
-count = int(m / (k+1)) * k
-count += m % (k + 1)
-
-result = 0
-result += count * first # 가장 큰 수 더하기
-result += (m - count) * second # 두번째로 큰 수 더하기
-print(result)
-```
 
 ---
 
