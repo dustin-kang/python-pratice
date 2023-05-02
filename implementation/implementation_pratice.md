@@ -79,47 +79,103 @@ print(result)
 
 # [실전2] 게임 개발
 
-> 여러가지 숫자 카드 중에서 가장 높은 숫자가 쓰인 카드 한장을 뽑는 게임입니다.
+게임 캐릭터가 맵  안에서 움직이는 시스템을 개발해야 한다.
 
-룰은 아래와 같습니다.
-1. 카드들의 형태가  N * M 형태로 놓여있다.
-2. 먼저 뽑고자 할 카드가 포함되어 있는 행을 선택한다.
-3. 그다음, 가장 숫자가 낮은 카드를 뽑는다.
-4. 따라서, 처음에 카드를 골라낼 행을 선택할 때, 이후에 해당 행에서 가장 낮은 카드를 뽑을 것을 고려해 최종적으로 가장 높은 숫자 카드를 뽑을 수 있게 전략을 세워라.
+맵의 크기는 `N x M`의 크기 직사각형으로, 캐릭터는 동서남북 중 한 곳만 바라본다.
+캐릭터는 상하좌우로 움직일 수 있고 바다로 되어 있는 공간엔 갈 수 없다.
+아래는 캐릭터의 움직임 설정 메뉴얼이다.
 
+1. 현재 위치에서 현재 방향 기준으로 왼쪽부터 차례대로 갈 곳을 정한다.
+2. 
+    2-1. 캐릭터의 왼쪽 방향에 아직 가보지 않은 칸이 있다면, 왼쪽 방향으로 회전한다음, 왼쪽으로 한칸 전진
+    2-2. 캐릭터의 왼쪽 방향에 가보지 않은 칸이 없다면, 왼쪽 방향으로 회전한 다음, 1번으로 돌아간다.
+3. 만약 네방향 모두가 가본 칸이거나 바다라면 바라보는 방향을 유지한 채 한 칸 뒤로 가고 1단계로 돌아온다. 이때 뒤 방향이 바다라면 움직임을 멈춘다.
 
-
-
-- 행의 갯수 N과 열의 갯수 M이 공백을 기준으로 자연수로 주어집니다. (1 <= N, M <= 100>)
-- 둘째 줄 부터 N개의 줄을 걸쳐 각 카드에 적힌 숫자가 주어집니다. (1 이상 10,000 이하)
+- 북(0), 동(1), 남(2), 서(3)
 
 
 ### 입력
+```py
+4 4 # 4 x 4 맵
+1 1 0 # (1,1)에 0(북쪽 방향)을 바로보고 서 있는 캐릭터
+1 1 1 1 # 1: 바다 # 0: 육지
+1 0 0 1
+1 1 0 1 
+1 1 1 1
 ```
-3 3
-3 1 2
-4 1 4
-2 2 2
-```
-```
-2 4 
-7 3 1 8
-3 3 3 4
-```
+
 ### 출력
-```
-2
-```
 ```
 3
 ```
-## 문제 풀이
-```python
-m, n = map(int, input().split())
-answer = []
-for i in range(m):
-    row = list(map(int, input().split()))
-    answer.append(min(row))
 
-print(max(answer))
+## 문제 풀이
+### 1. 캐릭터 위치와 맵 리스트로 입력 받기
+```python
+m , n = map(int, input().split())
+
+d  = [[0] * m for _ in range(n)] # 방문한 위치
+
+x, y, direction = map(int, input().split()) # 캐릭터 위치
+d[x][y] = 1 # 현재 방문 위치 표시
+
+# 전체 맵 정보 받기
+array = []
+for _ in range(n):
+    array.append(list(map(int, input().split()))) 
+
+# ⭐️ 북 동 남 서 방향으로 방향 정의 
+dx = [-1, 0, 1, 0]
+dy = [0, 1, 0, -1]
+```
+
+### 2. 왼쪽으로 회전의 경우 함수 작성
+```python
+def turn_left():
+    global direction
+    direction -= 1 # 방향이 서쪽(-1)인 경우 3으로 바꾸기, -1에서 가감하면 끝없기 때문
+    if direction == -1:
+        direction = 3
+```
+
+### 3. 시뮬레이션
+```python
+# 왼쪽으로 회전
+def turn_left():
+    global direction
+    direction -= 1 # 방향이 서쪽(-1)인 경우 3으로 바꾸기, -1에서 가감하면 끝없기 때문
+    if direction == -1:
+        direction = 3
+
+
+count = 1 # 방문 수
+turn_time = 0 # 회전 max : 4
+while True:
+    # 2번
+    turn_left()
+    nx = x + dx[direction]
+    ny = y + dx[direction]
+    # 2-1
+    if d[nx][ny] == 0 and array[nx][ny] == 0:
+        d[nx][ny] = 1
+        x = nx
+        y = ny
+        count += 1
+        turn_time = 0
+        continue
+    # 2-2
+    else: 
+        turn_time += 1
+    # 3
+    if turn_time == 4: # 한바퀴 다 회전 했을 경우
+        nx = x - dx[direction]
+        ny = y - dy[direction]
+        if array[nx][ny] == 0:
+            x = nx
+            y = ny
+        else :
+            break
+        turn_time = 0
+
+print(count)
 ```
