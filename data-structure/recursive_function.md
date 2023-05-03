@@ -1,4 +1,8 @@
 # Recursive Function
+
+<img width="462" alt="image" src="https://user-images.githubusercontent.com/55238671/235831800-a1c3d503-575a-4fa7-8e61-23eebb8e589a.png">
+
+
 재귀함수는 자기 자신을 호출하는 함수를 의미합니다. [시에르핀스키의 삼각형](https://en.wikipedia.org/wiki/Sierpiński_triangle)이나 프랙탈 구조를 생각해보면 된다.
 
 재귀함수를 사용하다보면 아래 에러와 마주칠 수 있다. 아래 에러는 재귀의 최대 깊이를 초과(exceed)했다고 나오는 오류 이다.
@@ -23,4 +27,6 @@ print(factorial(5))
 ```
 
 ## 재귀함수 이점
-반복문(iterative)을 사용했을 때와 재귀함수(recursive)를 사용했을 때를 비교해보면, **재귀함수가 더 간결해진다**라는 것을 알 수 있다. 이유는 소스코드에 수학의 점화식(재귀식)을 그대로 옮겼기 때문이다. 
+반복문(iterative)을 사용했을 때와 재귀함수(recursive)를 사용했을 때를 비교해보면, **재귀함수가 더 간결해진다**라는 것을 알 수 있다.
+
+이유는 소스코드에 수학의 점화식(재귀식)을 그대로 옮겼기 때문이다. 
