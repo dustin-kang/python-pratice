@@ -1,10 +1,10 @@
 # 👨‍💻 Programming Team Notes
 
 #### [📔 Python TIL](https://github.com/dustin-kang/Programming-Team-Notes/wiki)
-#### [🗃️ DataStructure](https://github.com/dustin-kang/Programming-Team-Notes#Data-Structure)
-#### [👨‍💻 Algorithm](https://github.com/dustin-kang/Programming-Team-Notes#-algorithm-이론)
+#### [🗃️ DataStructure](https://github.com/dustin-kang/Programming-Team-Notes#%EF%B8%8F-data-structure)
+#### [👨‍💻 Algorithm](https://github.com/dustin-kang/Programming-Team-Notes#-algorithm-1)
 #### [📄 문제 보러가기](https://github.com/dustin-kang/Programming-Team-Notes/issues)
-####  [📌 Reference](https://github.com/dustin-kang/Programming-Team-Notes#참고자료)
+####  [📌 Reference](https://github.com/dustin-kang/Programming-Team-Notes#-참고자료)
 
 <details>
 <summary> 👨‍💻 성장하는 그의 필모 그래피</summary>
@@ -31,8 +31,8 @@
 </details>
 
 # 🗃️ Data Structure
-- Stack, Queue
-- Recursive Function
+- [Stack, Queue](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/data-structure/stack_queue.md)
+- [Recursive Function](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/data-structure/recursive_function.md)
 
 
 # 👨‍💻 Algorithm

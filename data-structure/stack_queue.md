@@ -17,7 +17,7 @@
 5. **윈도우 프로그램** : 컴퓨터종료 시, 가장 먼저 운영체제가 구동되고 가장 마지막으로 종료된다.
 
 
-- [👨‍💻 Stack Team Note]()
+- [👨‍💻 Stack Team Note](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/data-structure/stack.py)
 
 
 
@@ -33,7 +33,7 @@
 - **너비 우선 탐색(BFS, Breadth-First Search) 구현**
 - **캐시(Cache) 구현**
 
-- [👨‍💻 Queue Team Note]()
+- [👨‍💻 Queue Team Note](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/data-structure/queue.py)
 
 > #### 📌 Queue 구현은  `Deque`를 사용하는 게 좋다.
 > `deque` 라이브러리는 스택과 큐의 장점을 모두 가지고 있는 라이브러리 입니다. 이유는 속도가 빠르고 간단히 이용할 수 있기 때문입니다. 
