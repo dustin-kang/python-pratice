@@ -3,6 +3,9 @@
 - **`Underflow`** : 특정한 자료구조가 수용할 수 있는 데이터 크기가 가득찬 상태에서 삽입(push) 연산을 수행하는 것을 의미합니다.
 - **`Overflow`** : 자료구조가 비어있는 상태에서 삭제(pop)연산을 수행할때 발생하는 것을 의미합니다.
 
+<img width="708" alt="image" src="https://user-images.githubusercontent.com/55238671/235831698-cf4c6e89-7e45-4e91-be6b-2b81314d7f63.png">
+
+
 # Stack
 스택은 **FILO 방식**으로 하나의 동일한 입출구에서 마지막 데이터를 삭제 및 삽입할 수 있는 자료구조를 의미합니다.
 
