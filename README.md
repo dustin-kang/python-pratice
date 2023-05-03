@@ -1,16 +1,10 @@
 # 👨‍💻 Programming Team Notes
 
-- [Python TIL](https://github.com/dustin-kang/Programming-Team-Notes/wiki)
-- [CodingTest](https://github.com/dustin-kang/Programming-Team-Notes#-python-coding-test)
-- [Algorithm](https://github.com/dustin-kang/Programming-Team-Notes#-algorithm-이론)
-- [Reference](https://github.com/dustin-kang/Programming-Team-Notes#참고자료)
-
-### [문제 보러가기](https://github.com/dustin-kang/Programming-Team-Notes/issues)
-- code : 문제번호 + 사이트 _ex) PG(프로그래머스), BOJ(백준), CU(코드업)_
-- Problem : 문제 링크
-- Solution : 해결한 마크다운 문서
-- tag : 관련 분류 문제 유형
-- date : 날짜
+#### [📔 Python TIL](https://github.com/dustin-kang/Programming-Team-Notes/wiki)
+#### [🗃️ DataStructure](https://github.com/dustin-kang/Programming-Team-Notes#Data-Structure)
+#### [👨‍💻 Algorithm](https://github.com/dustin-kang/Programming-Team-Notes#-algorithm-이론)
+#### [📄 문제 보러가기](https://github.com/dustin-kang/Programming-Team-Notes/issues)
+####  [📌 Reference](https://github.com/dustin-kang/Programming-Team-Notes#참고자료)
 
 <details>
 <summary> 👨‍💻 성장하는 그의 필모 그래피</summary>
@@ -21,10 +15,27 @@
 
 ![ic-pcce-lv4-f5f22bf0](https://user-images.githubusercontent.com/55238671/233020425-419f46c6-6f4f-4825-8112-6e911b8fe6fc.png)
 
-
 </details>
 
-# 📌 Algorithm 이론
+<details>
+<summary> 🖥️ Python vscode settings </summary>
+<h4> 디버깅 및  실행 단축키</h4>
+<li> 디버깅 단축키  : cmd + shift + d </li>
+<li> 시간  측정 : time python3 파이썬.py </li>
+
+<h4> 리눅스 명령어로 테스트 파일 만들기 </h4>
+
+1. 디버킹 아이콘 → `launch.json` 파일 만들기
+2. 메인 디렉토리에 input, output 파일, main.py 파일을 만들기
+3. launch.json 에 input을 통해 output을 내보내는 방식으로 리눅스 명령어 조절하기 `"args" : ["<", "input.txt", ">", "output.txt"]`
+</details>
+
+# 🗃️ Data Structure
+- Stack, Queue
+- Recursive Function
+
+
+# 👨‍💻 Algorithm
 
 - math-algorithm
   - [judje prime number (소수 판별 알고리즘)](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/math-algorithm/judge_prime_number.md)
@@ -38,22 +49,14 @@
   - 크루스칼 알고리즘
 - Implementation
   - [완전탐색, 시뮬레이션](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/implementation/implementation.md)
+- DFS BFS
+  - [DFS]()
+  - [BFS]()
 
 
-<details>
-<summary> Python vscode settings </summary>
-<h4> 디버깅 및  실행 단축키</h4>
-<li> 디버깅 단축키  : cmd + shift + d </li>
-<li> 시간  측정 : time python3 파이썬.py </li>
 
-<h4> 리눅스 명령어로 테스트 파일 만들기 </h4>
 
-1. 디버킹 아이콘 → `launch.json` 파일 만들기
-2. 메인 디렉토리에 input, output 파일, main.py 파일을 만들기
-3. launch.json 에 input을 통해 output을 내보내는 방식으로 리눅스 명령어 조절하기 `"args" : ["<", "input.txt", ">", "output.txt"]`
-</details>
-
-# 참고자료
+# 📌 참고자료
 - [복잡도 관한 설명](https://github.com/dustin-kang/devStudy/blob/main/data_structure/complexity.md)
 - [기본 파이썬 문법](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/Pythoncode.ipynb)
 - [개발형 코딩 테스트: API 호출](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/pythonapi.md)
