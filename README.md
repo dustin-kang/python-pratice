@@ -50,8 +50,8 @@
 - Implementation
   - [완전탐색, 시뮬레이션](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/implementation/implementation.md)
 - DFS BFS
-  - [DFS]()
-  - [BFS]()
+  - [DFS](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/dfs_bfs/dfs_bfs.md#dfs-depth-first-search)
+  - [BFS](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/dfs_bfs/dfs_bfs.md#bfs-breadth-first-search)
 
 
 
