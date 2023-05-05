@@ -14,6 +14,7 @@ N X M 개의 얼음 틀이 있을 경우, 구멍이 뚫려 있는 부분과 칸�
 
 이때 얼음 틀의 모양이 주어졌을 때 생성되는 총 아이스크림의 갯수를 구하여라.
 
+<img width="494" alt="image" src="https://user-images.githubusercontent.com/55238671/236455277-4832a79a-5108-4a09-93eb-c6a381506eb9.png">
 
 
 
@@ -94,6 +95,8 @@ N X M 크기의 직사각형 형태의 미로에 갇혀있다. 미로에는 여�
 
 이떄 괴물이 있는 부분을 `0`이고 괴물이 없는 부분을 `1`이라고 할때, **탈출하기 위해 움직일 수 있는 최소 칸의 개수를 구하시오.**
 (시작칸과 마지막 칸을 모두 포함해야 합니다.) 
+
+<img width="567" alt="image" src="https://user-images.githubusercontent.com/55238671/236455317-e5edf628-fc21-4ac4-84ca-82ddf60c0016.png">
 
 
 ### 입력
