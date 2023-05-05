@@ -173,5 +173,6 @@ bfs(graph, 1, visited)
 > 코딩테스트에서 **2차원 배열의 탐색 문제**가 있다면 그래프 형태로 바꾸서 풀이하면 된다.
 
 ---
-- [실전문제 : 음료수 얼려먹기]()
-- [실전문제 : 미로탈출]()
+- [음료수 얼려먹기](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/dfs_bfs/dfs_bfs_pratice.md#실전1-음료수-얼려먹기)
+- [미로 탈출](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/dfs_bfs/dfs_bfs_pratice.md#실전2-미로탈출)
+
