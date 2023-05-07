@@ -97,6 +97,11 @@ print(data)
 
 ## REST API 호출 실습
 
+- 파이썬에 제공되는 서드파티 라이브러리로 API를 불러와 데이터르 추출하는 API입니다.
+
+<img width="653" alt="image" src="https://user-images.githubusercontent.com/55238671/236669948-a9cc725b-6462-4c46-a132-9d13cc2b4146.png">
+
+
 ```python
 import requests
 
