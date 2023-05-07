@@ -44,6 +44,7 @@ print(response.text)
 - REST API : REST 아키텍처를 따르는 API
 - REST API 호출 : REST 방식을 따르고 있는 서버에 요청을 보내 데이터를 가져오는 것을 말합니다.
 
+[📌 파일 처리 TIL 보기](https://github.com/dustin-kang/Programming-Team-Notes/wiki/File-Management)
 
 ## JSON
 
