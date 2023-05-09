@@ -6,6 +6,9 @@
 ### 선택 정렬
 > 가장 작은 것을 **선택**한다는 의미로 선택 정렬 알고리즘이라고 합니다.
 
+
+![selection](https://user-images.githubusercontent.com/55238671/237060685-44cbe392-6370-45c5-a99d-bab4a817c7fb.gif)
+
 - 위 그림처럼 선택 정렬은 N-1번 반복하면 정렬이 됩니다.
 - 시간 복잡도는 점점 $N$부터 데이터를 감소하면서 실행했으므로 $O(N^2)$로 표기합니다.
   
@@ -31,6 +34,9 @@ print(array)
 ### 삽입 정렬
 > 특정 데이터를 적절한 위치에 **삽입**하는 알고리즘으로 위치에 들어가기 전까지는 이미 정렬된 상태라고 가정합니다.
 
+![insertion](https://user-images.githubusercontent.com/55238671/237060831-8a9f8272-cc4b-4ba5-8ff7-b12a2138ad55.gif)
+
+
 - 필요할 때만 위치를 바꾸므로 데이터가 **거의 정렬되어 있을 때만 효율적인** 알고리즘입니다.
 
 - 최악의 경우는 $O(N^2)$이지만 최선의 경우, 앞에 정렬이 된 상태라면 $O(N)$입니다.
@@ -48,6 +54,8 @@ for i in range(1, len(array)):
 
 ### 버블 정렬
 > 인접한 두 데이터를 비교해서 자리를 바꾸는 정렬 알고리즘입니다.
+
+![bubble](https://user-images.githubusercontent.com/55238671/237060863-bf4cdaeb-05ef-485a-9e2c-456d12a18055.gif)
 
 - 시간 복잡도는 $O(N^2)$ 입니다. 삽입정렬과 똑같이 완전히 정렬된 경우는 O(N)입니다.
 
@@ -68,11 +76,14 @@ for i in range(len(array)):
 ## 퀵 정렬
 > **피벗(pivot)** 으로 기준점으로 정해 피벗 보다 크면 오른쪽, 작으면 왼쪽으로 이동하고 재귀 용법을 활용해 함수를 반복시켜 정렬하는 알고리즘
 
-- 피벗을 설정해 리스트를 분할하는 방식에는 여러 방식이 있는데 그 중 [호어 분할 방식]()을 기준으로 많이 사용된다.
+![quick](https://user-images.githubusercontent.com/55238671/237061255-6f6418c5-9e6b-49d3-b5d0-3811cf5c7c2b.gif)
+
+
+- 피벗을 설정해 리스트를 분할하는 방식에는 여러 방식이 있는데 그 중 [호어 분할 방식](https://csanim.com/tutorials/hoares-quicksort-algorithm-python-animated-visualization-code)을 기준으로 많이 사용된다.
 - 평균적으로 시간 복잡도는 $O(NlogN)$이지만 최악의 경우 $O(N^2)$이다. 이유는 **점점 분할을 할 수록 절반으로 감소되기 때문에 분할 횟수도 기하급수적으로 감소하기 때문**입니다.
 - pivot이 가장 크거나 가장 작은 경우에는 모든 데이터를 비교해야합니다.
 - 위 예제 처럼 데이터가 이미 정렬되어 있거나 가장 왼쪽을 pivot으로 두면 느립니다.
-- [직관적인 퀵 정렬 알고리즘]()
+- [직관적인 퀵 정렬 알고리즘](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/sorting/quick_py.py)
 
 ```python
 array = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
