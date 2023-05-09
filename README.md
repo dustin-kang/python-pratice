@@ -50,12 +50,17 @@
   - 크루스칼 알고리즘
 - Implementation
   - [완전탐색, 시뮬레이션](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/implementation/implementation.md)
+  - [순차탐색, 이진탐색]()
 - DFS BFS
   - [DFS](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/dfs_bfs/dfs_bfs.md#dfs-depth-first-search)
   - [BFS](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/dfs_bfs/dfs_bfs.md#bfs-breadth-first-search)
-
-
-
+- Sorting
+  - [Selection Sort](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/sorting/sorting.md#선택-정렬)
+  - [Insertion Sort](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/sorting/sorting.md#삽입-정렬)
+  - [Bubble Sort](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/sorting/sorting.md#버블-정렬)
+  - [Quick Sort](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/sorting/sorting.md#퀵-정렬)
+  - [Merge Sort](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/sorting/sorting.md#병합-정렬)
+  - [Counting Sort](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/sorting/sorting.md#계수-정렬)
 
 # 📌 참고자료
 - [복잡도 관한 설명](https://github.com/dustin-kang/devStudy/blob/main/data_structure/complexity.md)
