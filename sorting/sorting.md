@@ -76,7 +76,8 @@ for i in range(len(array)):
 ## 퀵 정렬
 > **피벗(pivot)** 으로 기준점으로 정해 피벗 보다 크면 오른쪽, 작으면 왼쪽으로 이동하고 재귀 용법을 활용해 함수를 반복시켜 정렬하는 알고리즘
 
-![quick](https://user-images.githubusercontent.com/55238671/237061255-6f6418c5-9e6b-49d3-b5d0-3811cf5c7c2b.gif)
+<img src="https://blog.kakaocdn.net/dn/vlNwP/btqNfs4Csg1/jU7UOUBWIdVfltIaTf4EV0/img.gif">
+
 
 
 - 피벗을 설정해 리스트를 분할하는 방식에는 여러 방식이 있는데 그 중 [호어 분할 방식](https://csanim.com/tutorials/hoares-quicksort-algorithm-python-animated-visualization-code)을 기준으로 많이 사용된다.
