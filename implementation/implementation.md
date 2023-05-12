@@ -128,5 +128,5 @@ print(count)
 
 ---
 
-- [실전 문제 : 왕실 나이트]()
-- [실전 문제 : 게임 개발]()
+- [실전 문제 : 왕실 나이트](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/implementation_pratice.md#실전1-왕실의-나이트)
+- [실전 문제 : 게임 개발](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/implementation_pratice.md#실전2-게임-개발)

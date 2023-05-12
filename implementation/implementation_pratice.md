@@ -1,6 +1,6 @@
 > **INDEX**
-> - [왕실의 나이트]()
-> - [게임 개발]()
+> - [왕실의 나이트](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/implementation_pratice.md#실전1-왕실의-나이트)
+> - [게임 개발](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/implementation_pratice.md#실전2-게임-개발)
 
 
 # [실전1] 왕실의 나이트
