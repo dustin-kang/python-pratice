@@ -8,6 +8,9 @@
 ## 이진 탐색(Binary Search)
 찾으려는 데이터와 중간점에 있는 데이터를 반복적으로 비교하며 원하는 데이터를 찾는 방법
 
+<img width="520" alt="image" src="https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/658f4a8f-6728-481c-84c5-ea4344aae449">
+
+
 - **반드시 이미 정렬**되어 있어야한 사용할 수 있습니다.
 - 인덱스를 통해 중간점을 구할때 **소수점은 버립니다.**
 - 퀵 정렬과 비슷하게 절반씩 데이터가 줄어들기 때문에 $O(logN)$입니다.
@@ -36,7 +39,7 @@ else:
     print(result + 1)
 ```
 
-- [👉 반복문으로 구현한 이진탐색]()
+- [👉 반복문으로 구현한 이진탐색](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/search_pratice.py)
 
 > 📌 이진 탐색 알고리즘은 다른 알고리즘과 같이 혼합해서 출제되니 코드를 잘 암기하고 있어야 한다.
 
