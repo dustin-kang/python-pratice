@@ -102,7 +102,7 @@ def quick_sort(array, start, end):
             left += 1
         # 피벗보다 작거나 같은 데이터를 찾을 때 까지 반복
         while right > start and array[right] >= array[pivot]:
-            right += 1
+            right -= 1
         
         if left > right:
             # 엇갈렸다면 피벗과 교체
@@ -118,6 +118,57 @@ def quick_sort(array, start, end):
 quick_sort(array, 0, len(array)-1)
 ```
 ## 병합 정렬
+> 복잡한 문제를 작게 나누어서 풀어보는 알고리즘
+
+```python
+def split(data):
+    """
+    1. 나누기
+    """
+    if len(data) <= 1: # 재귀 적용 : 분리할 수 없을 때 까지
+        return data 
+    
+    medium = int(len(data) / 2) # 기준 값
+    left = split(data[:medium]) # 분할 계속 반복
+    right = split(data[medium:])
+    return merge(left, right)
+
+def merge(left, right):
+    """
+    2. 합치기
+    """
+    merged_list = []
+    left_point, right_point = 0, 0
+    
+    while len(left) > left_point and len(right) > right_point: # 둘다 데이터가 남아있을경우
+        if left[left_point] > right[right_point]: # 오른쪽 값이 더 작은 경우
+            merged_list.append(right[right_point])
+            right_point += 1 # 다음 인덱스 값
+        else :
+            merged_list.append(left[left_point])
+            left_point += 1 # 다음 인덱스 값
+            
+    while len(left) > left_point: # 왼쪽만 데이터가 있는 경우
+        merged_list.append(left[left_point])
+        left_point += 1 # 다음 인덱스 값
+        
+    while len(right) > right_point: # 오른쪽만 데이터가 있는 경우
+        merged_list.append(right[right_point])
+        right_point += 1 # 다음 인덱스 값
+        
+    return merged_list
+        
+
+data = [49, 97, 53, 5, 33, 65, 62, 51]    
+split(data)
+```
+
+- 분할, 정복, 결합의 단계로 나누어 문제를 푸는 알고리즘입니다.
+- 느리지만 안정적이고 $O(N log N)$의 시간 복잡도가 발생하는데 이유는 항상 단계가 절반씩 나눠지면서 만들어지기 때문입니다.
+
+1. 리스트를 절반으로 자른다.
+2. 합병 정렬을 이용해 각 부분의 리스트를 정렬한다.
+3. 정렬된 리스트를 합친다.
 
 
 ## 계수 정렬
