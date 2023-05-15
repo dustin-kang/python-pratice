@@ -79,6 +79,7 @@ for i in x:
 - 둘째 줄에는 떡의 개별 높이가 주어진다. 떡 높이 총합은 항상 M이상이고 높이는 10억보다 작거나 같은 양의 정수 또는 0이다.
 
 
+<img width="592" alt="image" src="https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/9efe3126-7d68-4125-9860-4ef8be6ad12a">
 
 
 ### 입력
