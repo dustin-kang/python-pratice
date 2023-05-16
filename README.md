@@ -51,7 +51,8 @@
   - 크루스칼 알고리즘
 - Implementation
   - [완전탐색, 시뮬레이션](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/implementation.md)
-  - [순차탐색, 이진탐색]()
+  - [순차탐색, 이진탐색](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/search.md)
+  - [Dynamic Programming](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/dynamic.md)
 - DFS BFS
   - [DFS](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/dfs_bfs/dfs_bfs.md#dfs-depth-first-search)
   - [BFS](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/dfs_bfs/dfs_bfs.md#bfs-breadth-first-search)
@@ -62,6 +63,7 @@
   - [Quick Sort](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/sorting/sorting.md#퀵-정렬)
   - [Merge Sort](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/sorting/sorting.md#병합-정렬)
   - [Counting Sort](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/sorting/sorting.md#계수-정렬)
+
 
 # 📌 참고자료
 - [복잡도 관한 설명](https://github.com/dongwoodev/devStudy/blob/main/data_structure/complexity.md)
