@@ -90,6 +90,9 @@ print(memo[x])
 $a_i = max(a_{i-1}, a_{i-2} + k_i)$
 
 
+<img width="546" alt="image" src="https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/395080e0-3dc4-4e6d-8cbc-a43117fe38d7">
+
+
 ```python
 n  = int(input())
 
@@ -115,6 +118,9 @@ print(memo[n - 1])
 |---|---|---|
 |20분|1초|128MB|
 
+<img width="444" alt="image" src="https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/749031f5-ccd6-445d-b73f-2175512a19ab">
+
+
 가로가 `N`이고 세로가 2인 직사각형 바닥이 있을 때, 이 바닥을`1 X 2`, `2 X 1`, `2 X 2` 덮개로 채우고자 한다.
 
 이때 바닥을 채우는 모든 경우의 수를 작성하세요.
@@ -138,6 +144,9 @@ print(memo[n - 1])
 
 - i - 1 까지 채워져 있을 경우 : 2 X 1
 - i - 2 까지 채워져 있을 경우 : 2 X 2, 2 X 1(2개)이다. 
+
+<img width="658" alt="image" src="https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/1380584f-e565-47cf-8377-11c21459b9ae">
+
 ```python
 
 n = int(input())
@@ -151,3 +160,4 @@ for i in range(3, n+1):
 print(memo[i])
 
 ```
+<img width="1084" alt="image" src="https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/4e154d37-916e-4378-a450-3dc3d77514d3">
