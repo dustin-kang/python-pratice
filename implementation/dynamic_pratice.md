@@ -1,8 +1,8 @@
 > **INDEX**
-> - [실전 문제 : 1로 만들기](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/sorting/dynamic_pratice.md#실전1-1로-만들기)
-> - [실전 문제 : 개미 전사](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/sorting/dynamic_pratice.md#실전2-개미-전사)
-> - [실전 문제 : 바닥공사](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/sorting/dynamic_pratice.md#실전3-바닥공사)
-> - [실전 문제 : 효율적인 화폐 구성](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/sorting/dynamic_pratice.md#실전4-효율적인-화폐-구성)
+> - [실전 문제 : 1로 만들기](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/dynamic_pratice.md#실전1-1로-만들기)
+> - [실전 문제 : 개미 전사](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/dynamic_pratice.md#실전2-개미-전사)
+> - [실전 문제 : 바닥공사](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/dynamic_pratice.md#실전3-바닥-공사)
+> - [실전 문제 : 효율적인 화폐 구성](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/dynamic_pratice.md#실전4-효율적인-화폐-구성)
 
 
 # [실전1] 1로 만들기

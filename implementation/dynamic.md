@@ -57,7 +57,7 @@ for i in range(3, n+1):
 > 💡 가능하면 탑다운 보다는 보텀업을 구현하는것을 권장한다. 이유는 시스템상 재귀함수의 스택 크기가 한정되어 있기 때문이다.
 
 ---
-- [실전 문제 : 1로 만들기](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/sorting/sorting_pratice.md#실전1-위에서-아래로)
-- [실전 문제 : 개미 전사](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/sorting/sorting_pratice.md#실전2-성적이-낮은-순서로-학생-출력하기)
-- [실전 문제 : 바닥공사](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/sorting/sorting_pratice.md#실전3-두-배열의-원소-교체)
-- [실전 문제 : 효율적인 화폐 구성](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/sorting/sorting_pratice.md#실전3-두-배열의-원소-교체)
+> - [실전 문제 : 1로 만들기](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/dynamic_pratice.md#실전1-1로-만들기)
+> - [실전 문제 : 개미 전사](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/dynamic_pratice.md#실전2-개미-전사)
+> - [실전 문제 : 바닥공사](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/dynamic_pratice.md#실전3-바닥-공사)
+> - [실전 문제 : 효율적인 화폐 구성](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/dynamic_pratice.md#실전4-효율적인-화폐-구성)
