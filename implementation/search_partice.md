@@ -96,8 +96,36 @@ for i in x:
 ## 문제 풀이
 
 우선 가장 긴 떡의 중간 값을 구한다음 합이 6과 같을 때까지 반복한다.고 생각해봤다.
+- 떡을 더 잘라야 하는 경우
+  - mid를 왼쪽으로 점점 이동
+- 떡을 덜 잘라야 하는 경우
+  - mid를 오른쪽으로 점점 이동
 
 
 ```python
+# 떡 개수와 요청한 떡 길이
+n, m = list(map(int, input().split(' ')))
+# 떡들의 개별 높이
+array = list(map(int, input().split()))
 
+
+start = 0
+end = max(array)
+
+result = 0
+while(start <= end):
+    total = 0 
+    mid = (start + end) // 2
+    for x in array:
+        # 잘랐을 때 떡의 양 계산
+        if x > mid:
+            total += x - mid
+    
+    if total < m : # 떡의 양이 부족한 경우 더 자르기
+        end = mid -1
+    else: # 떡의 양이 충분한 경우  덜 자르기
+        result = mid
+        start = mid + 1
+
+print(result)
 ```
