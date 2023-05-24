@@ -223,7 +223,9 @@ N 가지 종류의 화폐가 있을 때, 이 화폐들을 최소한으로 이용
 3
 5
 ```
+<img width="720" alt="image" src="https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/33f7d481-aa81-4b5e-b2fa-4a4bf2ccc368">
 
+위처럼 계산하면 된다.
 
 ```python
 # 정수 n과 m을 입력받는다.
