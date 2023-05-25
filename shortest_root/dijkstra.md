@@ -19,4 +19,8 @@ Dijkstra 알고리즘은 두 가지의 구현 방법으로 나뉠 수 있습니�
 ## 간단한 다익스트라 알고리즘
 > **노드가 5,000개 이하의 경우** 사용이 가능한 알고리즘입니다.
 
+
+![Untitled](https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/f0c1cef7-180e-4e93-8ed8-22efede7fa5f)
+
 - 시간복잡도 : $O(V^2)$
+- [코드 파일 바로가기](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/shortest_root/dijkstra_1.py)
