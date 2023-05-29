@@ -48,8 +48,8 @@
 - Greedy
   - [Greedy Alogrithm](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/greedy/greedy.md)
   - [Dynamic Programming](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/dynamic.md)
-  - [다익스트라 알고리즘]()
-  - 플로이드 워셜 알고리즘
+  - [Dijkstra Shortest Root](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/shortest_root/dijkstra.md)
+  - [Floyd warshall Shortest Root](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/shortest_root/floyd-warshall.md)
   - 벨만 포트 알고리즘
   - 크루스칼 알고리즘
 
