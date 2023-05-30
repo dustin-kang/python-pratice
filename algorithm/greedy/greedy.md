@@ -1,0 +1,38 @@
+# Greedy(그리디 알고리즘)
+
+> **현재 상황에서 가장 좋은 것만 고르는 기법**으로 나중에 미치는 영향은 생각하지 않는 알고리즘입니다. 대부분 `최적의 해`를 찾는 문제로 출제 됩니다.
+
+* 문제가 다양하고 최소한의 아이디어를 요구하는 문제로 **1이 될 때 까지**의 문제를 수행하면 됩니다.
+* **다익스트라 알고리즘, 크루스칼 알고리즘** : 그리디 알고리즘이면서도 '암기'가 필요한 문제이므로 팀노트가 필요합니다.
+
+## 현재 상황에서 가장 좋은 것?
+
+여기서 `현재 상황`은 기준이 됩니다. 예를 들어 가장 큰 순서, 가장 작은 순서를 말하게 됩니다.
+
+그래서 그리디 알고리즘은 정렬 알고리즘과 같이 사용될 때가 있습니다.
+
+## 👨‍💻 거스름돈 나눠주기
+
+여러 동전을 무한히 갖고 있다는 전제로, 금액이 주어졌을 때 거슬러 줘야할 동전의 최소 개수를 찾는 문제입니다.
+
+![image](https://user-images.githubusercontent.com/55238671/234170667-0bb9e6d7-176c-4bba-ae9f-24ef16f76765.png)
+
+```python
+money = 1250
+coins = {500:0, 100:0, 50:0, 10:0}
+count = 0
+
+# 큰 단위 화폐부터 차례대로 확인합니다.
+for coin in coins:
+    count = n // coin # 거슬러 줄 수 있는 코인의 갯수
+    coins[coin] +=1
+    n %= coin 
+```
+
+* 항상 그리디 알고리즘 문제를 풀 때는 최소한의 아이디어를 생각하여 이것이 정당한지 생각해야합니다.
+
+***
+
+* [실전 문제 : 큰 수의 법칙](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/greedy/greed\_pratice.md#%EC%8B%A4%EC%A0%841-%ED%81%B0%EC%88%98%EC%9D%98-%EB%B2%95%EC%B9%99)
+* [실전 문제 : 숫자 카드 게임](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/greedy/greed\_pratice.md#%EC%8B%A4%EC%A0%842-%EC%88%AB%EC%9E%90-%EC%B9%B4%EB%93%9C-%EA%B2%8C%EC%9E%84)
+* [실전 문제 : 1이 될때 까지](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/greedy/greed\_pratice.md#%EC%8B%A4%EC%A0%843-1%EC%9D%B4-%EB%90%A0-%EB%95%8C%EA%B9%8C%EC%A7%80)

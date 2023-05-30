@@ -1,11 +1,14 @@
+# implementation\_pratice
+
 > **INDEX**
-> - [왕실의 나이트](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/implementation_pratice.md#실전1-왕실의-나이트)
-> - [게임 개발](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/implementation/implementation_pratice.md#실전2-게임-개발)
+>
+> * [왕실의 나이트](implementation\_pratice.md#실전1-왕실의-나이트)
+> * [게임 개발](implementation\_pratice.md#실전2-게임-개발)
 
-
-# [실전1] 왕실의 나이트
+## \[실전1] 왕실의 나이트
 
 왕실 정원의 크기가 8 X 8이라고 할 때, 나이트는 L자 형태(ㄱ,ㄴ)로 이동할 수 있으며, 정원 밖으로 나갈 수 없다.
+
 1. 수평으로 두칸, 수직으로 한칸
 2. 수직으로 두칸, 수평으로 한칸
 
@@ -13,20 +16,22 @@
 
 예를 들어, 아래 그림처럼 나이트가 c2에 있다면 경우의 수는 6가지이다.
 
-<img width="613" alt="image" src="https://user-images.githubusercontent.com/55238671/235411395-8adc7227-3009-4266-b37d-08406e090fa1.png">
+![image](https://user-images.githubusercontent.com/55238671/235411395-8adc7227-3009-4266-b37d-08406e090fa1.png)
 
+#### 입력
 
-
-### 입력
 ```
 a1
 ```
-### 출력
+
+#### 출력
+
 ```
 2
 ```
 
-## 문제 풀이
+### 문제 풀이
+
 ```python
 # 1
 # 나이트의 위치 입력 받기
@@ -69,24 +74,19 @@ for step in steps:
 print(result)
 ```
 
-<img width="676" alt="image" src="https://user-images.githubusercontent.com/55238671/235411435-cfabcdcc-525a-43d8-92a7-17bba78b13bd.png">
+![image](https://user-images.githubusercontent.com/55238671/235411435-cfabcdcc-525a-43d8-92a7-17bba78b13bd.png)
 
+앞 [상하좌우](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/implementation/implementation.md#-%EC%83%81%ED%95%98%EC%A2%8C%EC%9A%B0) 문제에서는 `dx,dy` 리스트를 선언하여 이동 방향을 기록 하였고 이번에는 `steps` 변수가 dx와 dy의 기능을 대신하여 사용한다.
 
-앞 [상하좌우](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/implementation/implementation.md#-상하좌우) 문제에서는 `dx,dy` 리스트를 선언하여 이동 방향을 기록 하였고 이번에는 `steps` 변수가 dx와 dy의 기능을 대신하여 사용한다.
+***
 
+## \[실전2] 게임 개발
 
----
+게임 캐릭터가 맵 안에서 움직이는 시스템을 개발해야 한다.
 
-# [실전2] 게임 개발
+![image](https://user-images.githubusercontent.com/55238671/235599450-2e2f8f9d-881c-4128-8540-a7c00811d79a.png)
 
-게임 캐릭터가 맵  안에서 움직이는 시스템을 개발해야 한다.
-
-<img width="288" alt="image" src="https://user-images.githubusercontent.com/55238671/235599450-2e2f8f9d-881c-4128-8540-a7c00811d79a.png">
-
-
-맵의 크기는 `N x M`의 크기 직사각형으로, 캐릭터는 동서남북 중 한 곳만 바라본다.
-캐릭터는 상하좌우로 움직일 수 있고 바다로 되어 있는 공간엔 갈 수 없다.
-아래는 캐릭터의 움직임 설정 메뉴얼이다.
+맵의 크기는 `N x M`의 크기 직사각형으로, 캐릭터는 동서남북 중 한 곳만 바라본다. 캐릭터는 상하좌우로 움직일 수 있고 바다로 되어 있는 공간엔 갈 수 없다. 아래는 캐릭터의 움직임 설정 메뉴얼이다.
 
 ```
 1. 현재 위치에서 현재 방향 기준으로 왼쪽부터 차례대로 갈 곳을 정한다.
@@ -98,7 +98,8 @@ print(result)
 - 북(0), 동(1), 남(2), 서(3)
 ```
 
-### 입력
+#### 입력
+
 ```py
 4 4 # 4 x 4 맵
 1 1 0 # (1,1)에 0(북쪽 방향)을 바로보고 서 있는 캐릭터
@@ -108,13 +109,16 @@ print(result)
 1 1 1 1
 ```
 
-### 출력
+#### 출력
+
 ```
 3
 ```
 
-## 문제 풀이
-### 1. 캐릭터 위치와 맵 리스트로 입력 받기
+### 문제 풀이
+
+#### 1. 캐릭터 위치와 맵 리스트로 입력 받기
+
 ```python
 m , n = map(int, input().split())
 
@@ -133,7 +137,8 @@ dx = [-1, 0, 1, 0]
 dy = [0, 1, 0, -1]
 ```
 
-### 2. 왼쪽으로 회전의 경우 함수 작성
+#### 2. 왼쪽으로 회전의 경우 함수 작성
+
 ```python
 def turn_left():
     global direction
@@ -142,7 +147,8 @@ def turn_left():
         direction = 3
 ```
 
-### 3. 시뮬레이션
+#### 3. 시뮬레이션
+
 ```python
 # 왼쪽으로 회전
 def turn_left():
