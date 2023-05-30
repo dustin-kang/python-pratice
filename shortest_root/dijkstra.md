@@ -2,7 +2,7 @@
 
 > 방문하지 않은 노드 중에서 **가장 거리가 짧은(최단 경로)인 노드를 선택**하면서 모든 원소를 순차 탐색하는 알고리즘
 
-- 다익스트라 알고리즘은 반드시 음의 간선이 없을 때 정상적으로 동작합니다. (음의 간선이란, 0 미만의 `-`수를 가지는 간선을 의미합니다.)
+* 다익스트라 알고리즘은 반드시 음의 간선이 없을 때 정상적으로 동작합니다. (음의 간선이란, 0 미만의 `-`수를 가지는 간선을 의미합니다.)
 
 1. 출발 노드를 설정
 2. 최단 거리 테이블을 초기화 ( = 각 노드에 대한 최단 거리정보가 있음)
@@ -12,32 +12,29 @@
 3,4 번 반복
 
 Dijkstra 알고리즘은 두 가지의 구현 방법으로 나뉠 수 있습니다.
-- 구현 방법1 ) 구현은 쉬우나 느리게 동작하는 코드
-- 구현 방법 2 ) 구현은 어려우나 빠르게 동작하는 코드
 
+* 구현 방법1 ) 구현은 쉬우나 느리게 동작하는 코드
+* 구현 방법 2 ) 구현은 어려우나 빠르게 동작하는 코드
 
-## 간단한 다익스트라 알고리즘 <a href="https://youtu.be/i48L7aT3uIw"><img width="50" alt="image"  src="https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/ed0ba06e-2c0d-4f4f-8666-24d84cd5e54e"></a>
+## 간단한 다익스트라 알고리즘 [![image](https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/ed0ba06e-2c0d-4f4f-8666-24d84cd5e54e)](https://youtu.be/i48L7aT3uIw)
+
 > **노드가 5,000개 이하의 경우** 사용이 가능한 알고리즘입니다.
-
 
 ![Untitled](https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/f0c1cef7-180e-4e93-8ed8-22efede7fa5f)
 
-- 시간복잡도 : $O(V^2)$
-- [코드 파일 바로가기](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/shortest_root/dijkstra_1.py)
+* 시간복잡도 : $O(V^2)$
+* [코드 파일 바로가기](dijkstra\_1.py)
 
-## 개선된 다익스트라 알고리즘 <a href="https://youtu.be/XXzsUST5KSI"><img width="50" alt="image"  src="https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/ed0ba06e-2c0d-4f4f-8666-24d84cd5e54e"></a>
+## 개선된 다익스트라 알고리즘 [![image](https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/ed0ba06e-2c0d-4f4f-8666-24d84cd5e54e)](https://youtu.be/XXzsUST5KSI)
+
 > **노드의 개수가 10,000개를 넘어가는 문제**일 때 사용이 가능한 알고리즘입니다.
 
+![dijkstra\_2](https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/9720f99a-4c18-44ce-a232-753680dfa2c8)
 
-![dijkstra_2](https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/9720f99a-4c18-44ce-a232-753680dfa2c8)
-
-- 시간복잡도 : $O(ElogV)$
-- 개선된 알고리즘에서는 [힙(Heap)]()구조를 사용합니다.
-  - 특정 노드까지의 거리를 힙에 담아 더욱 빠르게 처리할 수 있어 로그 시간이 걸립니다.
-- [코드 파일 바로가기](https://github.com/dongwoodev/Programming-Team-Notes/blob/Python/shortest_root/dijkstra_2.py)
-
-
-
+* 시간복잡도 : $O(ElogV)$
+* 개선된 알고리즘에서는 [힙(Heap)](dijkstra.md)구조를 사용합니다.
+  * 특정 노드까지의 거리를 힙에 담아 더욱 빠르게 처리할 수 있어 로그 시간이 걸립니다.
+* [코드 파일 바로가기](dijkstra\_2.py)
 
 ```py
 import heapq # 우선순위 큐 사용

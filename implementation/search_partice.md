@@ -2,8 +2,8 @@
 
 > **INDEX**
 >
-> * [실전 문제 : 부품-찾기](../../sorting/search\_pratice.md#%EC%8B%A4%EC%A0%841-%EB%B6%80%ED%92%88-%EC%B0%BE%EA%B8%B0)
-> * [실전 문제 : 떡볶이 떡 만들기](../../sorting/search\_pratice.md#%EC%8B%A4%EC%A0%842-%EB%96%A1%EB%B3%B6%EC%9D%B4-%EB%96%A1-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+> * [실전 문제 : 부품-찾기](../sorting/search\_pratice.md#%EC%8B%A4%EC%A0%841-%EB%B6%80%ED%92%88-%EC%B0%BE%EA%B8%B0)
+> * [실전 문제 : 떡볶이 떡 만들기](../sorting/search\_pratice.md#%EC%8B%A4%EC%A0%842-%EB%96%A1%EB%B3%B6%EC%9D%B4-%EB%96%A1-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 
 ## \[실전1] 부품 찾기
 

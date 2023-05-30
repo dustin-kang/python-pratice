@@ -48,37 +48,37 @@
 
 ## 🗃️ Data Structure
 
-* [Stack, Queue](algorithm/data-structure/stack\_queue.md)
-* [Recursive Function](algorithm/data-structure/recursive\_function.md)
+* [Stack, Queue](data-structure/stack\_queue.md)
+* [Recursive Function](data-structure/recursive\_function.md)
 
 ## 👨‍💻 Algorithm
 
 * math-algorithm
-  * [judje prime number (소수 판별 알고리즘)](algorithm/math-algorithm/judge\_prime\_number.md)
-  * [Seive of Eratosthenes(에라토스테네스의 체 - 범위내 소수 판별)](algorithm/math-algorithm/sieve\_of\_eratosthenes.md)
-  * [Two Pointer(투 포인터)](algorithm/math-algorithm/two-pointer.md)
-  * [Range Sum(접두사 합을 이용한 구간 합)](algorithm/math-algorithm/range\_sum.md)
-  * [nPr and nCr(라이브러리를 이용한 순열과 조합)](algorithm/math-algorithm/itertools.md)
+  * [judje prime number (소수 판별 알고리즘)](math-algorithm/judge\_prime\_number.md)
+  * [Seive of Eratosthenes(에라토스테네스의 체 - 범위내 소수 판별)](math-algorithm/sieve\_of\_eratosthenes.md)
+  * [Two Pointer(투 포인터)](math-algorithm/two-pointer.md)
+  * [Range Sum(접두사 합을 이용한 구간 합)](math-algorithm/range\_sum.md)
+  * [nPr and nCr(라이브러리를 이용한 순열과 조합)](math-algorithm/itertools.md)
 * Greedy
-  * [Greedy Alogrithm](algorithm/greedy/greedy.md)
-  * [Dynamic Programming](algorithm/implementation/dynamic.md)
-  * [Dijkstra Shortest Root](algorithm/shortest\_root/dijkstra.md)
+  * [Greedy Alogrithm](greedy/greedy.md)
+  * [Dynamic Programming](implementation/dynamic.md)
+  * [Dijkstra Shortest Root](shortest\_root/dijkstra.md)
   * [Floyd warshall Shortest Root](shortest\_root/floyd-warshall.md)
   * 벨만 포트 알고리즘
   * 크루스칼 알고리즘
 * Implementation
-  * [완전탐색, 시뮬레이션](algorithm/implementation/implementation.md)
-  * [순차탐색, 이진탐색](algorithm/implementation/search.md)
+  * [완전탐색, 시뮬레이션](implementation/implementation.md)
+  * [순차탐색, 이진탐색](implementation/search.md)
 * DFS BFS
-  * [DFS](algorithm/dfs\_bfs/dfs\_bfs.md#dfs-depth-first-search)
-  * [BFS](algorithm/dfs\_bfs/dfs\_bfs.md#bfs-breadth-first-search)
+  * [DFS](dfs\_bfs/dfs\_bfs.md#dfs-depth-first-search)
+  * [BFS](dfs\_bfs/dfs\_bfs.md#bfs-breadth-first-search)
 * Sorting
-  * [Selection Sort](algorithm/sorting/sorting.md#선택-정렬)
-  * [Insertion Sort](algorithm/sorting/sorting.md#삽입-정렬)
-  * [Bubble Sort](algorithm/sorting/sorting.md#버블-정렬)
-  * [Quick Sort](algorithm/sorting/sorting.md#퀵-정렬)
-  * [Merge Sort](algorithm/sorting/sorting.md#병합-정렬)
-  * [Counting Sort](algorithm/sorting/sorting.md#계수-정렬)
+  * [Selection Sort](sorting/sorting.md#선택-정렬)
+  * [Insertion Sort](sorting/sorting.md#삽입-정렬)
+  * [Bubble Sort](sorting/sorting.md#버블-정렬)
+  * [Quick Sort](sorting/sorting.md#퀵-정렬)
+  * [Merge Sort](sorting/sorting.md#병합-정렬)
+  * [Counting Sort](sorting/sorting.md#계수-정렬)
 
 ## 📌 참고자료
 
