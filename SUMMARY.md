@@ -48,7 +48,8 @@
 
 ## Spark
 
-* [Page 3](spark/page-3.md)
+* [Spark를 소개합니다.](spark/spark-..md)
+* [Spark 설치하기](spark/spark.md)
 
 ## django
 
