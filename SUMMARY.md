@@ -40,7 +40,7 @@
 
 ## Design pattern
 
-* [Page 1](design-pattern/page-1.md)
+* [OOP 용어 정리](design-pattern/oop.md)
 
 ## Python
 
