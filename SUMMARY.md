@@ -12,6 +12,7 @@
   * [정렬 알고리즘](sorting/sorting.md)
   * [sorting\_pratice](sorting/sorting\_pratice.md)
 * [shortest\_root](algorithm/shortest\_root/README.md)
+  * [shortest\_pratice](algorithm/shortest\_root/shortest\_pratice.md)
   * [Dijkstra(다익스트라,데이크스트라) 알고리즘](shortest\_root/dijkstra.md)
   * [Floyd-warshall(플로이드 워셜 알고리즘)](algorithm/shortest\_root/floyd-warshall.md)
 * [math-algorithm](algorithm/math-algorithm/README.md)

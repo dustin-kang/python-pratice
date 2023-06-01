@@ -9,9 +9,7 @@
 
 ## \[실전1] 1로 만들기
 
-| [🔗](implementation.md#메모리-제약-사항) | 시간 제한 | 메모리 제한 |
-| --------------------------------- | ----- | ------ |
-| 20분                               | 1초    | 128MB  |
+<table data-header-hidden><thead><tr><th width="247.33333333333331"></th><th></th><th></th></tr></thead><tbody><tr><td><a href="implementation.md#메모리-제약-사항">🔗</a></td><td>시간 제한</td><td>메모리 제한</td></tr><tr><td>20분</td><td>1초</td><td>128MB</td></tr></tbody></table>
 
 정수 X가 주어졌을 때, 연산 4개를 사용해서 1를 만들려고 한다. 연산을 사용하는 횟수의 최솟값을 출력하시오.
 
