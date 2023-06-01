@@ -27,7 +27,7 @@ docker exec -it {CONTAINER ID} /bin/bash
 
 [https://www.databricks.com](https://www.databricks.com) 사이트를 이용하여 웹을 통해 Note를 작성할 수 있습니다.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -53,7 +53,7 @@ Pyspark 라이브러리에서 **`SparkContext`**라는 클래스를 사용할 �
 
 SparkContext라는 클래스가 물리적으로 생성되는 과정을 알 필요 있습니다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3).png" alt="" width="563"><figcaption><p>Pyspark Dataflow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt="" width="563"><figcaption><p>Pyspark Dataflow</p></figcaption></figure>
 
 <mark style="color:green;">**우선, Spark는 JVM 위에서 동작합니다.**</mark> Python Driver가 직접적으로 Spark Core에 접근할 방법은 없죠. 그렇기 때문에 Python Driver는 JVM을 통해서 Spark Core에 접근이 가능합니다.
 

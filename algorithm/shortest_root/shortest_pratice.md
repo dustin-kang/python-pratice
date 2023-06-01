@@ -61,10 +61,47 @@
 
 #### 문제 풀이
 
-```
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+
+전형적인 플로이드 워셜 알고리즘 문제로 <mark style="color:green;">**N의 범위가 100 이하라서 빠르게 풀 수 있는 문제**</mark>입니다. &#x20;
+
+```python
+INF = int(1e9)
+
+n, m = map(int, input().split())
+
+graph = [[INF] * (n + 1) for _ in range(n+1)]
+
+for a in range(1, n+1):
+    for b in range(1, n+1):
+        if a == b:
+            graph[a][b] = 0
+
+# 양방향 그래프이고 서로 가는 비용이 1임.
+for _ in range(m):
+    a, b = map(int, input().split())
+    graph[a][b] = 1
+    graph[b][a] = 1
+
+# 1 -> X -> K
+x, k = map(int, input().split())
+
+# 플로이드 워셜 알고리즘
+for k in range(1, n+1):
+    for a in range(1, n+1):
+        for b in range(1, n+1):
+            graph[a][b] = min(graph[a][b], (graph[a][k] + graph[k][b]))
+
+# 수행된 결과 출력 1 -> k -> x
+distance = graph[1][k] + graph[k][x]
+
+if distance >= INF:
+    print('-1')
+else:
+    print(distance)
 ```
 
-## \[실전2] 전
+## \[실전2] 전보
 
 <table data-header-hidden><thead><tr><th width="247.33333333333331"></th><th></th><th></th></tr></thead><tbody><tr><td><a href="../../implementation/implementation.md#메모리-제약-사항">🔗</a></td><td>시간 제한</td><td>메모리 제한</td></tr><tr><td>60분</td><td>1초</td><td>128MB</td></tr></tbody></table>
 
@@ -92,5 +129,59 @@
 
 #### 문제 풀이
 
+한 도시에서 다른 도시까지의 최단 거리를 구하는 문제이므로 다익스트라 알고리즘을 이용해 풀 수 있다.&#x20;
+
+그리고 N과 M의 범위가 크기 때문에 우선순위 큐를 이용해 작성해야한다.&#x20;
+
+```python
+import heapq
+import sys
+
+input = sys.stdin.readline
+INF = int(1e9)
+
+n, m, start = map(int, input().split()) # 도시, 간선, 시작노드
+graph = [[] for i in range(n+1)]
+distance = [INF] * (n+1)
+
+for _ in range(m):
+    x, y, z = map(int, input().split())
+    graph[x].append((y,z)) # x도시가 y도시 가는 통로 Z시간
+
+
+# 다익스트라 알고리즘
+def dijkstra(start):
+    q = [] # 우선순위 큐
+    # 시작 도시의 최단 경로를 담습니다.
+    heapq.heappush(q, (0, start))
+    distance[start] = 0
+
+    while q:
+        dist, now = heapq.heappop(q)
+        if distance[now] < dist: # 최단 경로보다 크다면 
+            continue # 무시
+        
+        for i in graph[now]: # 인접노드를 꺼내기
+            cost = dist + i[1] 
+            if cost < distance[i[0]]: # 인접 노드의 거리보다 작을 경우
+                distance[i[0]] = cost # 갱신
+                heapq.heappush(q, (cost, i[0])) # 노드들 우선순위 큐에 push
+
+dijkstra(start)
+
+count = 0 # 도시의 갯수
+max_distance = 0 # 도시들이 메세지를 받는데 걸리는 시간
+
+for d in distance:
+    if d != INF:
+        count += 1
+        max_distance = max(max_distance, d)
+# 시작 노드를 제외하므로 count - 1
+print(count - 1, max_distance)
 ```
-```
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
