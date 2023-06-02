@@ -23,6 +23,20 @@ docker ps
 docker exec -it {CONTAINER ID} /bin/bash
 ```
 
+### A-2. Local <-> Docker 파일 복사하는 법
+
+* Local -> Docker
+
+```
+docker cp {local pwd}/. {CONTAINER ID}:/home/jovyan/work
+```
+
+* Docker -> Local
+
+```
+docker cp {CONTAINER ID}:/home/jovyan/work {local pwd}
+```
+
 ## B. DataBricks 커뮤니티 에디션을 통해 스파크 실행
 
 [https://www.databricks.com](https://www.databricks.com) 사이트를 이용하여 웹을 통해 Note를 작성할 수 있습니다.
