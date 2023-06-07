@@ -23,7 +23,7 @@ Dijkstra 알고리즘은 두 가지의 구현 방법으로 나뉠 수 있습니�
 ![Untitled](https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/f0c1cef7-180e-4e93-8ed8-22efede7fa5f)
 
 * 시간복잡도 : $O(V^2)$
-* [코드 파일 바로가기](dijkstra\_1.py)
+* [코드 파일 바로가기](../../shortest\_root/dijkstra\_1.py)
 
 ## 개선된 다익스트라 알고리즘 [![image](https://github.com/dongwoodev/Programming-Team-Notes/assets/55238671/ed0ba06e-2c0d-4f4f-8666-24d84cd5e54e)](https://youtu.be/XXzsUST5KSI)
 
@@ -34,7 +34,7 @@ Dijkstra 알고리즘은 두 가지의 구현 방법으로 나뉠 수 있습니�
 * 시간복잡도 : $O(ElogV)$
 * 개선된 알고리즘에서는 [힙(Heap)](dijkstra.md)구조를 사용합니다.
   * 특정 노드까지의 거리를 힙에 담아 더욱 빠르게 처리할 수 있어 로그 시간이 걸립니다.
-* [코드 파일 바로가기](dijkstra\_2.py)
+* [코드 파일 바로가기](../../shortest\_root/dijkstra\_2.py)
 
 ```py
 import heapq # 우선순위 큐 사용

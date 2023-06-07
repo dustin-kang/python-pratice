@@ -62,7 +62,7 @@
 * Greedy
   * [Greedy Alogrithm](greedy/greedy.md)
   * [Dynamic Programming](implementation/dynamic.md)
-  * [Dijkstra Shortest Root](shortest\_root/dijkstra.md)
+  * [Dijkstra Shortest Root](algorithm/greedy/dijkstra.md)
   * [Floyd warshall Shortest Root](shortest\_root/floyd-warshall.md)
   * 벨만 포트 알고리즘
   * 크루스칼 알고리즘
@@ -84,5 +84,5 @@
 
 * [복잡도 관한 설명](https://github.com/dongwoodev/devStudy/blob/main/data\_structure/complexity.md)
 * [기본 파이썬 문법](Pythoncode.ipynb)
-* [개발형 코딩 테스트: API 호출](pythonapi.md)
+* [개발형 코딩 테스트: API 호출](python/pythonapi.md)
 * [👨‍💻 이것이 취업을 위한 코딩테스트다](https://github.com/ndb796/python-for-coding-test)
