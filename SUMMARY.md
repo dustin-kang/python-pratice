@@ -42,10 +42,11 @@
 ## Design pattern
 
 * [OOP 용어 정리](design-pattern/oop.md)
+* [디자인 원칙](design-pattern/undefined.md)
 
 ## Python
 
-* [Page 2](python/page-2.md)
+* [가변객체와 불변 객체](python/undefined.md)
 
 ## Spark
 
@@ -57,4 +58,6 @@
 
 ## django
 
-* [Page 4](django/page-4.md)
+* [Django를 소개합니다.](django/django-..md)
+* [Django 설치하기](django/django.md)
+* [HTML과 Box Model](django/html-box-model.md)
