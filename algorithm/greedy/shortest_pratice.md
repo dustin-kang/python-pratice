@@ -61,7 +61,7 @@
 
 #### 문제 풀이
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 전형적인 플로이드 워셜 알고리즘 문제로 <mark style="color:green;">**N의 범위가 100 이하라서 빠르게 풀 수 있는 문제**</mark>입니다. &#x20;
 
@@ -184,4 +184,4 @@ print(count - 1, max_distance)
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>

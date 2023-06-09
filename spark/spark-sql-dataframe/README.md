@@ -1,10 +1,10 @@
-# Spark SQL
+# Spark SQL : Dataframe 데이터 구조
 
 ## Spark SQL
 
 * **Dataframe**을 이용하여 Query하여 데이터를 처리할 수 있습니다.
 
-<figure><img src="../.gitbook/assets/carbon-5.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/carbon-5.png" alt="" width="375"><figcaption></figcaption></figure>
 
 1. **Hive Integration** : Hadoop에서 사용했던 Hive Query 툴을 Spark SQL에서 사용이 가능합니다.
 2. **Standard Connectivity** : BI 툴에서 SparkSQL로 Query를 보낼 수 있습니다.
@@ -45,9 +45,12 @@ def parse_line(line: str):
         compensation=int(fields[3]))
 
 spark = SparkSession.builder.appName("SparkSQL").getOrCreate()
+
+# 데이터 가져오
 lines = spark.sparkContext.textFile("file:///home/jovyan/work/sample/income.txt")
 income_data = lines.map(parse_line)
 
+# RDD를 데이터 프레임으로 변환하기
 schema_income = spark.createDataFrame(data=income_data)
 schema_income.createOrReplaceTempView("income")
 ```
@@ -66,7 +69,7 @@ RDD나 List 또는 Pandas의 DataFrame으로 **DataFrame을 생성**할 수 있�
 
 만들어진 DataFrame은 **`.show()`** 라는 메소드를 통해 나타낼 수 있습니다.
 
-### SQL 사용하기
+#### SQL 사용하기
 
 <pre class="language-python"><code class="lang-python">from pyspark.sql.functions import col, asc, desc 
 # column name, ascending order, descending order
@@ -85,7 +88,7 @@ medium_income_df.show()
 schema_income.groupBy("country").count().orderBy(col("count").desc()).show()
 </code></pre>
 
-## CSV 파일 불러오기
+## Read / Write CSV
 
 ```python
 from pyspark.sql import SparkSession
@@ -94,93 +97,33 @@ from pyspark.sql.functions import (avg, col, round as rnd)
 spark = SparkSession.builder.appName("sql_import_csv").getOrCreate()
 csv_file_path = "file:///home/jovyan/work/sample/age.csv"
 
+# read
 data = spark.read.option("header", "True")\ # True, 첫 Row를 헤더처리합니다.
             .option("inferSchema", "True")\ # True, Field의 자료형을 추론합니다.
             .csv(csv_file_path) # csv 파일을 읽어옵니다.
 
+# data = spark.read.csv("filepath", header=True, inferSchema=True)
+
+
 # printSchema : 스키마를 보여주는 함수
 data.printSchema()
+data.show()
+
+# write 
+data.coalesce(1).write.option("heaer","true")\
+            .csv(csv_file_path)
+
 ```
 
 위 코드와 비슷하지만 `csv` 파일을 Dataframe으로 읽어올 때 SparkSession의 **`read`** 라는 메소드를 사용합니다. `read` 함수에는 여러가지 `option`을 통해 Dataframe으로 읽어올 수 있습니다.&#x20;
 
-불러온 DataFrame을 [`.select()` `.avg()` `groupBy()` `agg(GroupBy연산)`](https://spark.apache.org/docs/3.1.2/api/python/reference/api/pyspark.sql.DataFrame.html?highlight=dataframe#pyspark.sql.DataFrame) 을 통해 여러가지 연산을 할 수 있습니다.
+write 할 때, **`coalesce(partitions)`** 의 옵션은 파티션의 갯수를 의미합니다. 데이터 파일을 저장할 때 얼마만큼의 파티션으로 나눌지 정하는 것입니다. 예시처럼, 1로 입력을 하게되면 1개의 데이터로 저장이 됩니다. 만약 방대한 데이터의 경우 파티션을 1로 지정하면 Out of Memory 문제가 발생할 것이다.
+
+불러온 DataFrame을 [`.select()` `.avg()` `groupBy() .na.drop() .na.fill()` `agg(GroupBy연산)`](https://spark.apache.org/docs/3.1.2/api/python/reference/api/pyspark.sql.DataFrame.html?highlight=dataframe#pyspark.sql.DataFrame) 을 통해 여러가지 연산을 할 수 있습니다.
 
 > #### 새로운 Column을 만들어내는 [`withColumn(colName, col)`](https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.withColumn.html?highlight=.withcolumn#pyspark.sql.DataFrame.withColumn) 함수
 >
 > withColumn 함수를 이용해 새로운 컬럼이 더하거나 존재하는 컬럼을 수정해 Dataframe을 반환합니다.
-
-
-
-### functions
-
-pyspark의 sql은 다양한 함수들을 사용할 수 있어요.
-
-* **`round(col, 소수점)`** :  소수점 반올림을 위한 함수
-* **`sum(col)`** : 합계를 구하는 함수
-* **`explode(col)`** : **Transpose**와 같은 기능으로 col과 row를 치환할 수 있다.
-
-```python
-df = spark.createDataFrame([
-        Row(a=1,
-            intlist=[1,2,3],
-            mapfield={"a": "b"}
-           )])
-
-df.show()
-df.select(functions.explode(df.intlist).alias("anInt")).show()
-# output: [Row(anInt=1), Row(anInt=2), Row(anInt=3)]
-```
-
-<figure><img src="../.gitbook/assets/image (6).png" alt="" width="375"><figcaption></figcaption></figure>
-
-* **`split(str, pattern, limit=-1)`** : **문자열 데이터를 패턴에 적용시켜 분할** 하여 리스트로 만들 수 있다. 만약, 한번만 분할하고 싶으면 `limit=1` 로 설정하면 된다.
-
-```python
-# functions.split(str, pattern, limit=-1)
-# Splits str around matches of the given pattern.
-df = spark.createDataFrame([
-        Row(word="hello world and pyspark")])
-df.select(functions.split(df.word, ' ').alias("word")).show()
-```
-
-* **`udf(function)`** : 사용자 정의 함수를 만들어낼 수 있는 함수입니다.&#x20;
-
-```python
-def get_occupation_name(occupation_id:str) -> str:
-    return occupation_dict.value[occupation_id]
-    
-occupation_lookup_udf = f.udf(get_occupation_name)
-# lambda 함수를 바로 사용해도 됩니다.
-```
-
-### StructType
-
-StructType에 포함된 `StructField` 를 반복적으로 적용할 수 있는 기능입니다. **만약 데이터프레임에 헤더가 없는 경우 `Field`를 만들어주는 기능**을 하고 있습니다.
-
-```python
-from pyspark.sql import (
-    SparkSession,
-    functions as f,
-    Row,
-    types as t
-)
-```
-
-먼저 `types` 라는 모듈을 불러옵니다.
-
-```python
-# types.StructField(name, dataType, nullable=True, metadata=None)
-table_schema = t.StructType([
-    t.StructField("country", t.StringType(), True),
-    t.StructField("temperature", t.FloatType(), True),
-    t.StructField("observed_date", t.StringType(), True)])
-
-csv_file_path = "file:///home/jovyan/work/sample/temp_with_date.csv"
-df = spark.read.schema(table_schema).csv(csv_file_path)
-```
-
-StructType 내에 StructField를 구성하여 Schema를 만들어줍니다. 그런 다음, sparkSession을 통해 Schema와 데이터가 담긴 데이터파일(csv)을 읽어들이면 됩니다.
 
 
 

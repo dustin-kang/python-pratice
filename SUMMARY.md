@@ -50,10 +50,14 @@
 ## Spark
 
 * [Spark를 소개합니다.](spark/spark-..md)
-* [Spark 설치하기](spark/spark.md)
-* [Spark 아키텍처 이해하기](spark/spark-1.md)
-* [RDD](spark/rdd.md)
-* [Spark SQL](spark/spark-sql.md)
+* [Spark 아키텍처 이해하기](spark/spark/README.md)
+  * [PySpark Architecture](spark/spark/pyspark-architecture.md)
+* [RDD 데이터 구조](spark/rdd/README.md)
+  * [Broadcast](spark/rdd/broadcast.md)
+* [Spark SQL : Dataframe 데이터 구조](spark/spark-sql-dataframe/README.md)
+  * [Join](spark/spark-sql-dataframe/join.md)
+  * [functions :  함수 사용하기](spark/spark-sql-dataframe/functions.md)
+  * [types : Field 생성하기](spark/spark-sql-dataframe/types-field.md)
 
 ## django
 

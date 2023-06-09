@@ -20,24 +20,50 @@ Spark는 **대량의 데이터(Batch Data)를 쪼개 동시에 처리**할 수 �
 
 > Worker Node는 Cache를 공유하면서 작업의 속도를 높일 수 있어요.
 
-## RDD
+## PySpark 설치하기&#x20;
 
-스파크에서 가장 중요한 역할을 하는 RDD입니다.
+### A. Docker 기반 Spark 설치하기
 
-RDD는 **여러개 노드에 분산되어 있는 데이터셋**입니다. 그래서 탄력적 분산 데이터셋(Resilient  Distributed Dataset)이라고 합니다.&#x20;
+> 진행하기 앞서, [Docker.com](https://www.docker.com)에서 운영체제에 맞는 Docker를 설치합니다.
 
-RDD의 큰 특징으로 다음과 같습니다.
+아래 코드와 같이 Docker를 통해 Local root와 Internal root를 연결시킵니다.
 
-* **Lazy Evaluation** : 파이썬의 Generator 처럼 필요할 때마다 액션을 실행하는 녀석입니다.  액션을 실행하기 전까지는 연산을 하지 않아요. 그래서 게으른 연산이라고 합니다.
-* **Immutablity** : 처리하는 도중에 데이터는 바뀌지가 않기 때문에 노드가 망가져도 다시 복원을 할 수 있습니다. 그래서 탄력적입니다.
-* **abstract :** 분산 처리이기 때문에 데이터가 흩어져 있어도 하나의 파일 인 것처럼 사용합니다.
+이미지를 다운받게 되면 중간에 링크가 등장하는데 링크를 통해 Jupyter에서 사용하시면 됩니다.
 
-> **Spark Operations**
->
-> 앞에 등장했었던 액션(Action)과 변환(Trasformation)이라는 단어가 익숙치 않을 것입니다. Spark에서는 위 두가지 연산을 잘 사용합니다.
->
-> * **Transformation** : 바꾼다는 의미가 아니라 새로 RDD를 생성한다는 의미가 강합니다. 이 작업을 수행할 때마다 연산 기록이 남게 됩니다.&#x20;
-> * **Action** : 실제로 메모리에 올려 연산을 수행하는 작업입니다.
+```docker
+docker run -it --rm 8888:8888 -v /Users/Local:/home/jovyan/work jupyter/pyspark-notebook
+```
+
+#### A-1. JuypterNotebook 안으로 들어가는 법
+
+`ps` 를 통해 실행중인 프로세스를 확인한 다음, 컨테이너의 ID를 통해 들어가시면 됩니다.
+
+```
+docker ps 
+docker exec -it {CONTAINER ID} /bin/bash
+```
+
+#### A-2. Local <-> Docker 파일 복사하는 법
+
+* Local -> Docker
+
+```
+docker cp {local pwd}/. {CONTAINER ID}:/home/jovyan/work
+```
+
+* Docker -> Local
+
+```
+docker cp {CONTAINER ID}:/home/jovyan/work {local pwd}
+```
+
+### B. DataBricks 커뮤니티 에디션을 통해 스파크 실행
+
+[https://www.databricks.com](https://www.databricks.com) 사이트를 이용하여 웹을 통해 Note를 작성할 수 있습니다.
+
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
 
 
 
