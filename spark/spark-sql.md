@@ -12,12 +12,24 @@
 
 > #### RDD보다 Dataframe을 더 선호하는 이유?
 >
-> DataFrame은 RDD에 반해 Column과 Row로 이루어진 구조화된 데이터로 사람들이 쉽게 데이터를 처리할 수 있기 때문입니다. RDD는 구조화가 되어있지 않고 Low-Level의 API를 제공하기 때문에 불편한 감이 있겠죠. 그러나 RDD는 쓰면 안된다는 것은 아닙니다. RDD는 주로 비 구조화된 데이터를 사용하거나 최적화나 스키마를 굳이 따지고 싶지 않다거나 함수형 프로그래밍을 사용하고 싶을 때 RDD를 사용합니다.&#x20;
+> DataFrame은 RDD에 반해 Column과 Row로 이루어진 <mark style="color:purple;">**구조화된 데이터(관계형 데이터)**</mark>로 사람들이 쉽게 데이터를 처리할 수 있기 때문입니다. RDD는 구조화가 되어있지 않고 Low-Level의 API를 제공하기 때문에 불편한 감이 있겠죠. 그러나 RDD는 쓰면 안된다는 것은 아닙니다. RDD는 주로 비 구조화된 데이터를 사용하거나 최적화나 스키마를 굳이 따지고 싶지 않다거나 함수형 프로그래밍을 사용하고 싶을 때 RDD를 사용합니다.&#x20;
 
-### DataFrame
+| RDD                           | Structured Data(DataFrame)                  |
+| ----------------------------- | ------------------------------------------- |
+| 튜플로 이루어진 비 구조화 데이터            | 데이터 구조를 알고 있어 **어떤 테스크를 수행할 건지 정의**만 하면 된다. |
+| Map,flatMap,filter로 유저의 함수 수행 | **최적화도 자동**으로 할 수 있음                        |
+| Spark Core                    | Spark SQL                                   |
+| SparkContext                  | SparkSession                                |
+
+## DataFrame
 
 * `Schema` 를 만들거나 JSON,CSV,Hive,Avro,PArquet, ORC등을 읽거나 작성할 수 있습니다.
+* Mllib 이나 Spark Streaming 같은 다른 모듈과 사용하기 편합니다.
 * JDBC나 ODBC,  Tabluau 툴과 연결할 수 있습니다.
+
+> #### `RDD` 에서 `DataFrame` 으로 변환 하는 방법이 있긴 합니다.
+>
+> `rdd = df.rdd.map(tuple)` 을 사용하면 변환을 할 수 있으나 덜 사용하는 편이 좋다고 합니다.
 
 ```python
 from pyspark.sql import(
@@ -94,13 +106,19 @@ data.printSchema()
 
 불러온 DataFrame을 [`.select()` `.avg()` `groupBy()` `agg(GroupBy연산)`](https://spark.apache.org/docs/3.1.2/api/python/reference/api/pyspark.sql.DataFrame.html?highlight=dataframe#pyspark.sql.DataFrame) 을 통해 여러가지 연산을 할 수 있습니다.
 
-#### functions
+> #### 새로운 Column을 만들어내는 [`withColumn(colName, col)`](https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.withColumn.html?highlight=.withcolumn#pyspark.sql.DataFrame.withColumn) 함수
+>
+> withColumn 함수를 이용해 새로운 컬럼이 더하거나 존재하는 컬럼을 수정해 Dataframe을 반환합니다.
+
+
+
+### functions
 
 pyspark의 sql은 다양한 함수들을 사용할 수 있어요.
 
-* `round(col, 소수점)` :  소수점 반올림을 위한 함수
-* `sum(col)` : 합계를 구하는 함수
-* `explode(col)` : **Transpose**와 같은 기능으로 col과 row를 치환할 수 있다.
+* **`round(col, 소수점)`** :  소수점 반올림을 위한 함수
+* **`sum(col)`** : 합계를 구하는 함수
+* **`explode(col)`** : **Transpose**와 같은 기능으로 col과 row를 치환할 수 있다.
 
 ```python
 df = spark.createDataFrame([
@@ -116,7 +134,7 @@ df.select(functions.explode(df.intlist).alias("anInt")).show()
 
 <figure><img src="../.gitbook/assets/image (6).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* `split(str, pattern, limit=-1)` : **문자열 데이터를 패턴에 적용시켜 분할** 하여 리스트로 만들 수 있다. 만약, 한번만 분할하고 싶으면 `limit=1` 로 설정하면 된다.
+* **`split(str, pattern, limit=-1)`** : **문자열 데이터를 패턴에 적용시켜 분할** 하여 리스트로 만들 수 있다. 만약, 한번만 분할하고 싶으면 `limit=1` 로 설정하면 된다.
 
 ```python
 # functions.split(str, pattern, limit=-1)
@@ -126,7 +144,17 @@ df = spark.createDataFrame([
 df.select(functions.split(df.word, ' ').alias("word")).show()
 ```
 
-#### StructType
+* **`udf(function)`** : 사용자 정의 함수를 만들어낼 수 있는 함수입니다.&#x20;
+
+```python
+def get_occupation_name(occupation_id:str) -> str:
+    return occupation_dict.value[occupation_id]
+    
+occupation_lookup_udf = f.udf(get_occupation_name)
+# lambda 함수를 바로 사용해도 됩니다.
+```
+
+### StructType
 
 StructType에 포함된 `StructField` 를 반복적으로 적용할 수 있는 기능입니다. **만약 데이터프레임에 헤더가 없는 경우 `Field`를 만들어주는 기능**을 하고 있습니다.
 
@@ -153,6 +181,10 @@ df = spark.read.schema(table_schema).csv(csv_file_path)
 ```
 
 StructType 내에 StructField를 구성하여 Schema를 만들어줍니다. 그런 다음, sparkSession을 통해 Schema와 데이터가 담긴 데이터파일(csv)을 읽어들이면 됩니다.
+
+
+
+
 
 #### 참고
 

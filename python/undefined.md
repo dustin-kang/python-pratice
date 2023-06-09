@@ -111,7 +111,7 @@ print(id(y)
 
 불변 객체와 가변 객체의 연산 비교하면 <mark style="color:blue;">**불변 객체**</mark>는 매번 새로운 메모리 공간을 할당해주어야 하기 때문에 <mark style="color:blue;">**메모리 누수 발생 가능성**</mark>이 있습니다.
 
-하지만 <mark style="color:blue;">**불변 객체는 값이 변하지 않는다는 점에서 신뢰성이 높습니**</mark><mark style="color:red;">**다.**</mark>
+하지만 <mark style="color:blue;">**불변 객체는 값이 변하지 않는다는 점에서 신뢰성이 높습니**</mark><mark style="color:blue;"><mark style="color:red;">**다.**<mark style="color:red;"></mark>&#x20;
 
 #### Reference.
 
