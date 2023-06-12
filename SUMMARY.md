@@ -33,6 +33,7 @@
   * [dfs\_bfs](dfs\_bfs/dfs\_bfs.md)
   * [dfs\_bfs\_pratice](dfs\_bfs/dfs\_bfs\_pratice.md)
 * [자료구조](algorithm/data-structure/README.md)
+  * [서로소 집합](algorithm/data-structure/undefined.md)
   * [힙(Heap)](data-structure/heap.md)
   * [Recursive Function](data-structure/recursive\_function.md)
   * [stack\_queue](data-structure/stack\_queue.md)
