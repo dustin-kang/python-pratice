@@ -146,7 +146,35 @@ RDD 모든 요소들의 값 개수를 <mark style="color:green;">**Dictonary 형
 
 
 
+## 종속성(Dependency)
+
+Spark의 Transformation에는 넓은 종속성과 좁은 종속성이 존재합니다.
+
+<figure><img src="../../.gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure>
+
+#### 좁은 종속성 (narrow dependency)
+
+단순하고 한정적인 종속성을 가진다. **최대 하나의 파티션을 가지며 임의의 데이터를 요구**할 수 있다. (1:1 대응)
+
+e.g. `map()` `mapPartition()` `flatMap()` `filter()` `union()`
+
+#### 넓은 종속성 (Wide dependency)
+
+<mark style="color:orange;">**특별한 방법에 따라 데이터를 요구**</mark>할 수 있다. 예를 들어, **키의 값**에 따라 데이터를 요구한다. (파티션마다 어떤 키가 있는지 알아야하기 때문에 키의 재분포, <mark style="color:orange;">**셔플링이 필요한 이유**</mark>) 만약, 어떤 특정한 방법으로 파티션이 되어 있다는 것을 알고 있다면 셔플링을 하지 않는다. (N:1 대)
+
+`groupByKey()` `aggregateByKey()` `sortByKey()` `reduceByKey()` `aggregate()` `join()` `repartitions()`
+
+> #### Shuffling이란?
+>
+> 셔플링은 노드 사이에서 데이터가 메소드로 인해 이동하는 것을 말합니다. 이동하는 데이터가 많으면 Spark 성능에 큰 영향을 끼치기 때문에(응답시간이 늘어납니다.) Shuffling이 되도록이면 적은 방향으로 구성해야 합니다.
+
+결론적으로, 부모 RDD를 구성하는 파티션이 여러 개의 자식 RDD 파티션과 관계를 맺고 있으면 **넓은 의존성**을 갖고 있고 그 반대이면 **좁은 의존성**을 갖고 있다고 말할 수 있습니다.
+
+
+
 ### 참고
+
+* [https://brocess.tistory.com/187](https://brocess.tistory.com/187)
 
 {% embed url="https://spark.apache.org/docs/3.1.2/api/python/reference/index.html" %}
 프레임워크는 공식 문서를 참고하면 편해요.

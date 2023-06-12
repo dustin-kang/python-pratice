@@ -10,7 +10,7 @@ Spark는 **대량의 데이터(Batch Data)를 쪼개 동시에 처리**할 수 �
 
 ## Structure
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Spark Structure</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Spark Structure</p></figcaption></figure>
 
 위 구조를 자세히보면,&#x20;
 

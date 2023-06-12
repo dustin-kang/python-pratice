@@ -52,12 +52,16 @@
 * [Spark를 소개합니다.](spark/spark-..md)
 * [Spark 아키텍처 이해하기](spark/spark/README.md)
   * [PySpark Architecture](spark/spark/pyspark-architecture.md)
+  * [Logical Plan, Physical Plan](spark/spark/logical-plan-physical-plan.md)
+  * [Adaptive Query Execution(AQE)](spark/spark/adaptive-query-execution-aqe.md)
+  * [Spark 메모리 할당과 메모리 관리](spark/spark/spark.md)
 * [RDD 데이터 구조](spark/rdd/README.md)
   * [Broadcast](spark/rdd/broadcast.md)
 * [Spark SQL : Dataframe 데이터 구조](spark/spark-sql-dataframe/README.md)
   * [Join](spark/spark-sql-dataframe/join.md)
   * [functions :  함수 사용하기](spark/spark-sql-dataframe/functions.md)
   * [types : Field 생성하기](spark/spark-sql-dataframe/types-field.md)
+  * [Dynamic Partition Pruning(DPP)](spark/spark-sql-dataframe/dynamic-partition-pruning-dpp.md)
 
 ## django
 

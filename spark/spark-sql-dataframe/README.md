@@ -125,7 +125,16 @@ write 할 때, **`coalesce(partitions)`** 의 옵션은 파티션의 갯수를 �
 >
 > withColumn 함수를 이용해 새로운 컬럼이 더하거나 존재하는 컬럼을 수정해 Dataframe을 반환합니다.
 
+### Dataframe API
 
+| Narrow Dependency | Wide Dependency | Actions          |
+| ----------------- | --------------- | ---------------- |
+| select()          | groupByKey()    | show()           |
+| filter()          | join()          | head()           |
+| withColumn()      | cube()          | first()          |
+| drop()            | rollup()        | count()          |
+| where()           | repartitions()  | collect()        |
+|                   |                 | saveAsTextfile() |
 
 
 

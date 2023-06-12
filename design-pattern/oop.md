@@ -2,7 +2,7 @@
 
 ## 클래스와 객체
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="306"><figcaption><p>Class Example (UML)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt="" width="306"><figcaption><p>Class Example (UML)</p></figcaption></figure>
 
 * 객체 지향 프로그래밍(OOP) : 데이터의 속성이나 메소드들을 객체라는 묶음으로 모은다는 개념, 이러한 객체들을 클래스들의 집합으로 구성됩니다.
 * 클래스(Class): 속성과 메소드로 이루어진 하나의 집합 개념
