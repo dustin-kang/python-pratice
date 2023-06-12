@@ -9,6 +9,7 @@
 
 * [정렬](algorithm/sorting/README.md)
   * [정렬 알고리즘](sorting/sorting.md)
+  * [위상 정렬](algorithm/sorting/undefined.md)
   * [sorting\_pratice](sorting/sorting\_pratice.md)
 * [수학알고리즘](algorithm/math-algorithm/README.md)
   * [순열과 조합](math-algorithm/itertools.md)

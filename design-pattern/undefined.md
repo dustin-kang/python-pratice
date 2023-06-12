@@ -43,7 +43,7 @@
 
 > 클래스들은 확장에만 열려있고 변경에는 닫혀 있어요.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt="" width="563"><figcaption><p>기존 클래스는 변경하지 않고 새 배송 메서드를 추가할 수 있다.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (2).png" alt="" width="563"><figcaption><p>기존 클래스는 변경하지 않고 새 배송 메서드를 추가할 수 있다.</p></figcaption></figure>
 
 이 원칙의 주목적은 새로운 기능을 구현할 때, 기존 코드가 깨지지 않는 것을 말합니다. 자신의 클래스를 직접 변경하는 대신에, 자식 클래스를 만들어 다르게 행동하는 부분만 오버라이드하면 기존 클래스를 해치지 않게 됩니다.
 
