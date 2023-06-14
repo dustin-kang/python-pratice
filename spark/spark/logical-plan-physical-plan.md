@@ -4,7 +4,7 @@
 
 실제로 Query를 작성한 후 [`df.explain(mode='extended')` ](https://spark.apache.org/docs/latest/sql-ref-syntax-qry-explain.html)를 입력하면 확인할 수 있습니다. 이 코드를 통해 각 단계마다 어떤 플랜이 세워져 있는지 확인 가능합니다.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p><a href="https://www.databricks.com/glossary/catalyst-optimizer">https://www.databricks.com/glossary/catalyst-optimizer</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p><a href="https://www.databricks.com/glossary/catalyst-optimizer">https://www.databricks.com/glossary/catalyst-optimizer</a></p></figcaption></figure>
 
 ## Logical Plan
 

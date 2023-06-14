@@ -50,7 +50,7 @@ Spark에는 `Transformation` 과 `Action`이라는 연산을 통해 데이터를
 * **Transformation** : 바꾼다는 의미가 아니라 **새로  RDD를 생성한다는 의미가 강합니다.** 이 작업을 수행할 때마다 연산 기록이 남게 됩니다.&#x20;
 * **Action** : 실제로 메모리에 올려 연산을 수행하는 작업입니다.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Spark Operations</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Spark Operations</p></figcaption></figure>
 
 이후 만들어놓은 `text_file`를 Spark 연산을 통해 변환할 수 있습니다.&#x20;
 

@@ -2,7 +2,7 @@
 
 위상 정렬(Topology sort)는 <mark style="color:orange;">**모든 노드를 방향성을 거스르지 않도록 전체 순서를 계산하는 알고리즘**</mark>입니다. 여기서, 방향성을 거스르지 않는다는 의미는 선 후 관계를 지킨다는 의미입니다. 예를 들어서 아래 그림처럼 딥러닝 과목을 듣기 위해선 데이터 사이언스 과목을 들어야하고 또 머신러닝 과목을 들어야 한다고 합니다. 이렇게 각 노드의 선 후 관계를 지키면서 순서대로 정렬하는 알고리즘을 위상 정렬 알고리즘이라고 합니다.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 이 알고리즘에서 나오는 개념으로 진입 차수(Indegree)가 있습니다. 진입차수는 특정 노드에 들어오는 간선의 개수를 말합니다. 위 그림, 딥러닝은 진입차수가 2개이고 데이터 사이언스는 0개임을 의미합니다. 그렇다면 진입차수로 위상 정렬 알고리즘을 어떻게 구현할까요?
 

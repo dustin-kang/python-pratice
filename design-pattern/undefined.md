@@ -37,7 +37,7 @@
 
 클래스에게 너무 많은 작업을 수행하게 되면 하나를 변경하게되면 클래스 전체가 변경해야 합니다. 이와 같은 복잡성을 줄이기 위해 단일 책임 원칙이 필요한 것 입니다.
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>추가 행동들은 자체 클래스들에 있다.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption><p>추가 행동들은 자체 클래스들에 있다.</p></figcaption></figure>
 
 ## 개방 폐쇄 원칙 (Open Closed)
 

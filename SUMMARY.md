@@ -58,12 +58,16 @@
   * [Adaptive Query Execution(AQE)](spark/spark/adaptive-query-execution-aqe.md)
   * [Spark 메모리 할당과 메모리 관리](spark/spark/spark.md)
 * [RDD 데이터 구조](spark/rdd/README.md)
-  * [Broadcast](spark/rdd/broadcast.md)
+  * [Shared Variable](spark/rdd/shared-variable.md)
 * [Spark SQL : Dataframe 데이터 구조](spark/spark-sql-dataframe/README.md)
   * [Join](spark/spark-sql-dataframe/join.md)
   * [functions :  함수 사용하기](spark/spark-sql-dataframe/functions.md)
   * [types : Field 생성하기](spark/spark-sql-dataframe/types-field.md)
   * [Dynamic Partition Pruning(DPP)](spark/spark-sql-dataframe/dynamic-partition-pruning-dpp.md)
+* [Spark Engine](spark/spark-engine/README.md)
+  * [Spark Cache](spark/spark-engine/spark-cache.md)
+  * [Repartition 과 Coalesce](spark/spark-engine/repartition-coalesce.md)
+  * [Speculative Execution](spark/spark-engine/speculative-execution.md)
 
 ## django
 
