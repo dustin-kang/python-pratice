@@ -2,7 +2,7 @@
 
 Stage에서 하나의 Task가 다른 Task보다 느린 이유가 Worker Node의 문제일 때 사용하는 방법입니다.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt="" width="375"><figcaption></figcaption></figure>
 
 * 하드웨어의 문제를 해결합니다.
 * 여분의 리소스를 더 사용하기 때문에 메모리 사용이 증가합니다.

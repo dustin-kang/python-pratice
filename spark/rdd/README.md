@@ -2,7 +2,7 @@
 
 ## RDD가 무엇인가요?
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 스파크에서 가장 중요한 역할을 하는 RDD입니다.
 

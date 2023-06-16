@@ -10,7 +10,7 @@ Spark는 재사용을 위해 다양한 옵션을 제공합니다. 재사용을 �
 
 이전 Spark의 구조를 소개했을 때 그림입니다. 캐시들은 각 WorkerNode 내 Executor에 <mark style="color:orange;">**설정된 메모리 만큼 파티션을 캐싱하는 것**</mark>이 가능합니다. 즉, 메모리 맞게 캐시에 Partition을 담아 사용할 수 있는 것이죠. 만약에 데이터가 메모리에 충분하지 않으면 Disk를 활용할 수 있습니다.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt="" width="340"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt="" width="340"><figcaption></figcaption></figure>
 
 ```python
 dfCaced = spark.read.format("parquet").load("./data_parquet").cache()

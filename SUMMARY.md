@@ -56,7 +56,6 @@
   * [PySpark Architecture](spark/spark/pyspark-architecture.md)
   * [Logical Plan, Physical Plan](spark/spark/logical-plan-physical-plan.md)
   * [Adaptive Query Execution(AQE)](spark/spark/adaptive-query-execution-aqe.md)
-  * [Spark 메모리 할당과 메모리 관리](spark/spark/spark.md)
 * [RDD 데이터 구조](spark/rdd/README.md)
   * [Shared Variable](spark/rdd/shared-variable.md)
 * [Spark SQL : Dataframe 데이터 구조](spark/spark-sql-dataframe/README.md)
@@ -66,8 +65,12 @@
   * [Dynamic Partition Pruning(DPP)](spark/spark-sql-dataframe/dynamic-partition-pruning-dpp.md)
 * [Spark Engine](spark/spark-engine/README.md)
   * [Spark Cache](spark/spark-engine/spark-cache.md)
+  * [Spark Memory Management](spark/spark-engine/spark-memory-management.md)
+  * [Spark Job Scheduling](spark/spark-engine/spark-job-scheduling.md)
   * [Repartition 과 Coalesce](spark/spark-engine/repartition-coalesce.md)
   * [Speculative Execution](spark/spark-engine/speculative-execution.md)
+* [Spark ML](spark/spark-ml.md)
+* [Spark Streaming](spark/spark-streaming.md)
 
 ## django
 

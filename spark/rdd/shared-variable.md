@@ -7,7 +7,7 @@ Spark에서 사용되는 공유변수(Shared Variable)에는 두가지 유형이
 * &#x20;**큰 규모의 데이터를 효율적으로 제공할 때 사용하기 위해** 사용하는 **읽기 전용 변수**입니다. 이는 효율성을 위해 Driver에 재전송 할 필요 없이 모든 Worker 단에서 Task가 공유받으면서 사용할 수 있는 변수를 의미합니다.
 * 머신러닝 알고리즘 처럼 큰 사이즈의 벡터가 Worker 노드에 필요하다면 Broadcast Variable 를 사용하는 게 좋습니다.
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ```python
 meta = {

@@ -1,6 +1,6 @@
 # 클래스
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Class</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Class</p></figcaption></figure>
 
 ## 클래스
 

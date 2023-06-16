@@ -15,7 +15,7 @@
 
 만약 아래의 원소들이 있고, 집합 연산도 아래와 같을 때 입니다.
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 여기서 `union 2, 4` 는 현 루트 노드가 각각 4 -> 1, 2 -> 2 이기 때문에 2의 부모를 1로 설정합니다.
 
