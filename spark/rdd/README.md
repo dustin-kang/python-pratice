@@ -150,7 +150,7 @@ RDD 모든 요소들의 값 개수를 <mark style="color:green;">**Dictonary 형
 
 Spark의 Transformation에는 넓은 종속성과 좁은 종속성이 존재합니다.
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 #### 좁은 종속성 (narrow dependency)
 

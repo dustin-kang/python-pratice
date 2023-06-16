@@ -40,15 +40,14 @@
   * [Recursive Function](data-structure/recursive\_function.md)
   * [stack\_queue](data-structure/stack\_queue.md)
 
-## Design pattern
-
-* [OOP 용어 정리](design-pattern/oop.md)
-* [디자인 원칙](design-pattern/undefined.md)
-
 ## Python
 
 * [가변객체와 불변 객체](python/undefined.md)
-* [API 사용법](python/pythonapi.md)
+* [클래스](python/undefined-1/README.md)
+  * [데이터 클래스](python/undefined-1/undefined.md)
+* [파일 처리하기](python/undefined-2/README.md)
+  * [API 사용법](python/undefined-2/pythonapi.md)
+  * [패키징, 압축하기](python/undefined-2/undefined.md)
 
 ## Spark
 
@@ -75,3 +74,6 @@
 * [Django를 소개합니다.](django/django-..md)
 * [Django 설치하기](django/django.md)
 * [HTML과 Box Model](django/html-box-model.md)
+* [URL과 View 설계하기](django/url-view.md)
+* [Template 설계하기](django/template.md)
+* [Model 설계하기](django/model.md)

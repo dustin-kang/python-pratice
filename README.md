@@ -84,5 +84,5 @@
 
 * [복잡도 관한 설명](https://github.com/dongwoodev/devStudy/blob/main/data\_structure/complexity.md)
 * [기본 파이썬 문법](Pythoncode.ipynb)
-* [개발형 코딩 테스트: API 호출](python/pythonapi.md)
+* [개발형 코딩 테스트: API 호출](python/undefined-2/pythonapi.md)
 * [👨‍💻 이것이 취업을 위한 코딩테스트다](https://github.com/ndb796/python-for-coding-test)

@@ -15,7 +15,7 @@
 
 만약 아래의 원소들이 있고, 집합 연산도 아래와 같을 때 입니다.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 여기서 `union 2, 4` 는 현 루트 노드가 각각 4 -> 1, 2 -> 2 이기 때문에 2의 부모를 1로 설정합니다.
 
@@ -100,3 +100,4 @@ for i in range(1, v + 1):
 서로소 알고리즘은 무방향 그래프 내에서 사이클을 판별할 수 있다는 특징을 지녔습니다.  간선을 하나씩 확인해가면서 두 노드가 포함되어 있는 집합을 합치는(union) 과정을 반복하면서 사이클을 판별할 수 있니다. 이 알고리즘은 간선에 방향성이 없을 때 가능합니다.
 
 > 방향이 있는 그래프에 경우, DFS 알고리즘을 이용하여 판별할 수 있습니다.
+
