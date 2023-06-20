@@ -71,8 +71,11 @@
   * [Spark Job Scheduling](spark/spark-engine/spark-job-scheduling.md)
   * [Repartition 과 Coalesce](spark/spark-engine/repartition-coalesce.md)
   * [Speculative Execution](spark/spark-engine/speculative-execution.md)
-* [Spark ML](spark/spark-ml.md)
+* [Spark ML](spark/spark-ml/README.md)
+  * [Linear Regression](spark/spark-ml/linear-regression.md)
+  * [ALS Collaborative Filitering](spark/spark-ml/als-collaborative-filitering.md)
 * [Spark Streaming](spark/spark-streaming.md)
+* [Spark on Cloud](spark/spark-on-cloud.md)
 
 ## django
 
