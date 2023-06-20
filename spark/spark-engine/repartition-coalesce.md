@@ -19,7 +19,7 @@ df = df.repartition('city', 'region') # 컬럼 이름만
 * Repartition을 한다고 해서 모든 파티션의 데이터가 동일하지 않는다.
 * 메모리 이슈나 Skewed 데이터가 있는 경우 사용한다.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### repartitionByRange()
 
@@ -34,6 +34,6 @@ df.repartitionByRange(2, 'age') # 파티션 갯수, 컬럼 이름
 * 파티션을 줄이는데 사용하는 함수
 * repartiton에 반해 셔플링은 하지 않고 파션을 합친다.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.coalesce.html#pyspark.RDD.coalesce" %}

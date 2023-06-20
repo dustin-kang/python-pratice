@@ -2,7 +2,7 @@
 
 ## 메모리 할당
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 Spark 내 메모리를 할당하는 방법에는 두가지로 나뉩니다.
 
@@ -26,6 +26,6 @@ spark.memory.storageFraction=0.5 # Storage
 
 ## 메모리 관리
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 그렇다면, Spark에서 Job이 실행되었다면 Execution Memory에 Thread들이 실행될 것입니다. 그러나 thread의 용량이 Execution Memory의 허용치를 넘었면 Storage Memory를 빌려 사용할 수 있습니다. 다만 비었을 가정에 말이죠. 만약 Storage Memory가 어느정도 채워있다면 Disk에 자장하는 방법이 있습니다. 이마저도 방법이 없다면 Out of Memory가 발생하게 됩니다.

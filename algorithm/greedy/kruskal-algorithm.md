@@ -14,7 +14,7 @@
 * 용산 - 신용산
 * 신용산 - 삼각지
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt="" width="214"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt="" width="214"><figcaption></figcaption></figure>
 
 구체적인 알고리즘 순서는 아래와 같습니다.
 

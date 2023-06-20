@@ -12,7 +12,7 @@ Spark 내 Job Scheduling 방식에는 두가지로 나뉘어 질 수 있습니�
 
 #### 동적 할당 (Dynamic Allocation)
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Worker Node에 따라 Application이 점유하는 자원을 동적으로 조정하는 방식입니다. <mark style="color:orange;">**만약 애플리케이션이 사용하지 않은 자원이라면, 그만큼, 클러스터에게 반환을 하고 또, 그 만큼 필요하다면 그만큼 다시 요청하는 방식**</mark>입니다. 이렇게 보면 정적보다 동적 할당이 자원을 공유하는 데 더 유용하다고 볼 수 있죠.
 
@@ -27,7 +27,7 @@ sparkSession.config("spark.scheduler.mode","FAIR")
 
 ### Fair Scheduling Pool
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 default로는 FIFO로 되어있으나 하나의 Job에서 실행해야할 Task가 너무 많을 때, 대기시간 또한 길어지게 됩니다. 이러한 문제를 해결하기 위해 Spark에서 <mark style="color:orange;">**Fair Scheduling**</mark>이라는 기능을 제공합니다. 양쪽 그림을 비교해보면, **여러 Job을 분배하여 실행이 가능**하게 됩니다. Application의 실행시간도 줄이고 처리량도 올리고 여러개의 Pool를 구성하기 때문에 우선순위도 정할 수 있습니다.
 
