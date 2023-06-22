@@ -20,6 +20,8 @@
 * 다음 N개의 줄에는 강의와 강의시간 그리고 강의를 듣기 위해 먼저 들어야 하는 선수 강의 번호가 자연수로 주어지며 공백으로 구분합니다. 이때 강의시간은 100,000 이하의 자연수입니다.
 * 각 줄은 -1로 끝납니다.
 
+![](<../../.gitbook/assets/image (17).png>)
+
 ```
 5
 10 -1
@@ -42,6 +44,8 @@
 ### 문제 풀이
 
 각 노드(강의)에 대해 인접 노드를 확인할 때, 인접한 노드가 현재 노드보다 더 긴 강의시간을 찾는 다면 오랜 시간 의 값을 저장하여 테이블을 갱신합니다.
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ```python
 from collections import deque
@@ -96,7 +100,11 @@ topolohy_sort()
 
 위상 정렬을 통해 간선정보를 확인하여 테이블을 갱신합니다.
 
+<figure><img src="../../.gitbook/assets/image (18).png" alt="" width="375"><figcaption></figcaption></figure>
+
 * result = 최종적으로 각 최소 강의 사간을 담는 리스트입니다.
 * `deepcopy` 를 통해 time 리스트 변수의 값을 복사해 result 변수 값으로 설정합니다.
+
+<figure><img src="../../.gitbook/assets/image (15).png" alt="" width="375"><figcaption></figcaption></figure>
 
 > 값의 연산이 있을 예정일 때, 영향을 미치지 않게 하려면 리스트 값을 복제하는  deepcopy() 함수를 이용합니다.

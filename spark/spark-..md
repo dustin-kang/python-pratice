@@ -2,7 +2,7 @@
 
 ## Introduce Spark
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Spark Component</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>Spark Component</p></figcaption></figure>
 
 Spark는 **대량의 데이터(Batch Data)를 쪼개 동시에 처리**할 수 있는 빅데이터 처리 엔진입니다. 이전에는 Hadoop을 사용했으나 속도면에서 워낙 Spark가 빠르기 때문에 Spark를 많이 사용하게 되었습니다.
 

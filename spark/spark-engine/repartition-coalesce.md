@@ -34,6 +34,6 @@ df.repartitionByRange(2, 'age') # 파티션 갯수, 컬럼 이름
 * 파티션을 줄이는데 사용하는 함수
 * repartiton에 반해 셔플링은 하지 않고 파션을 합친다.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.coalesce.html#pyspark.RDD.coalesce" %}

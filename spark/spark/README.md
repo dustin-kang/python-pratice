@@ -14,7 +14,7 @@
 
 ## YARN 아키텍처 이해하기
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>YARN Architecture</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>YARN Architecture</p></figcaption></figure>
 
 Hadoop의 YARN 아키텍처를 이해하는데 조금 어려울 수 있습니다.
 

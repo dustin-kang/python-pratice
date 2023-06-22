@@ -4,7 +4,7 @@
 
 <table data-header-hidden><thead><tr><th width="247.33333333333331"></th><th></th><th></th></tr></thead><tbody><tr><td><a href="../../implementation/implementation.md#메모리-제약-사항">🔗</a></td><td>시간 제한</td><td>메모리 제한</td></tr><tr><td>40분</td><td>2초</td><td>256MB</td></tr></tbody></table>
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 이장님은 위와 같이 N개의 집과 M개의 길로 이루어진 마을에서 마을을 분할할 계획을 세우고 있다.\
 &#x20;마을을 분할할 때는 서로 연결되도록 분할해야 한다. 그런데 보니까 마을에는 길이 너무 많다는 생각을 하게 되었다.  두 마을 사이에 길들은 필요가 없으므로 없앨 수 있고 두 집 사이에 경로는 항상 존재하면서도 더 없 수 있다. 그렇다면 나머지 길의 유지비의 합을 최소로 하는 프로그램을 작성하자.
