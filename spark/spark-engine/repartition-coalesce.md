@@ -19,7 +19,7 @@ df = df.repartition('city', 'region') # 컬럼 이름만
 * Repartition을 한다고 해서 모든 파티션의 데이터가 동일하지 않는다.
 * 메모리 이슈나 Skewed 데이터가 있는 경우 사용한다.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### repartitionByRange()
 
