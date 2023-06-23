@@ -75,7 +75,8 @@
   * [Linear Regression](spark/spark-ml/linear-regression.md)
   * [ALS Collaborative Filitering](spark/spark-ml/als-collaborative-filitering.md)
 * [Spark Streaming](spark/spark-streaming/README.md)
-  * [WordCount 예제](spark/spark-streaming/wordcount.md)
+  * [Spark Streaming(prev)](spark/spark-streaming/spark-streaming-prev.md)
+  * [Spark Structed Streaming](spark/spark-streaming/spark-structed-streaming.md)
 * [Spark on Cloud](spark/spark-on-cloud.md)
 
 ## django
