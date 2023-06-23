@@ -66,7 +66,7 @@ DStream에서 생성된 각 RDD 요소들을 출력합니다.
 
 ```python
 ssc.start() # 스트림 서버를 실행합니다.
-ssc.awaitTermination() # 쿼리의 종료를 기다립니다.
+ssc.awaitTermination() # 쿼리가 끝날때까 종료를 기다립니다. 설정하지 않으면 프로세스가 종료됩니다. 
 ```
 
 ![](<../../.gitbook/assets/Screenshot 2023-06-23 at 17.24.12.png>)
