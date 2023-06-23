@@ -31,7 +31,7 @@ Spark는 **대량의 데이터(Batch Data)를 쪼개 동시에 처리**할 수 �
 이미지를 다운받게 되면 중간에 링크가 등장하는데 링크를 통해 Jupyter에서 사용하시면 됩니다.
 
 ```docker
-docker run -it --rm 8888:8888 -v /Users/Local:/home/jovyan/work jupyter/pyspark-notebook
+docker run -it --rm -p 8888:8888 -v /Users/Local:/home/jovyan/work jupyter/pyspark-notebook
 ```
 
 #### A-1. JuypterNotebook 안으로 들어가는 법
