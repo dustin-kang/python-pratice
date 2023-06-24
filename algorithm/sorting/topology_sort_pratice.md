@@ -45,7 +45,7 @@
 
 각 노드(강의)에 대해 인접 노드를 확인할 때, 인접한 노드가 현재 노드보다 더 긴 강의시간을 찾는 다면 오랜 시간 의 값을 저장하여 테이블을 갱신합니다.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ```python
 from collections import deque

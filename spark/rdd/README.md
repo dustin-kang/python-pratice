@@ -6,7 +6,7 @@
 
 스파크에서 가장 중요한 역할을 하는 RDD입니다.
 
-RDD는 <mark style="color:blue;">**여러개 노드에 분산되어 있는 데이터셋**</mark>입니다. 그래서 탄력적 분산 데이터셋(Resilient  Distributed Dataset)이라고 합니다. RDD는 Spark에서 가장 처음 도입된 데이터 구조이기 때문에 Low-Level 한 데이터라고 부릅니다.
+RDD는 <mark style="color:orange;">**여러개 노드에 분산되어 있는 데이터셋**</mark>입니다. 그래서 탄력적 분산 데이터셋(Resilient  Distributed Dataset)이라고 합니다. RDD는 Spark에서 가장 처음 도입된 데이터 구조이기 때문에 Low-Level 한 데이터라고 부릅니다.
 
 RDD의 큰 특징으로 다음과 같습니다.
 
@@ -34,7 +34,7 @@ rdd = sc.textFile(data_file) # 3
 
 ```
 
-1. 우선, RDD를 생성하기 전에 SparkContext 객체를 생성해야 합니다. 다음과 같이 SparkContext를 `getOrCreate()` 메서드를 통해 생성하고 RDD를 만들어봅시다.
+1. 우선, RDD를 생성하기 전에 <mark style="color:orange;">**SparkContext 객체를 생성**</mark>해야 합니다. 다음과 같이 SparkContext를 `getOrCreate()` 메서드를 통해 생성하고 RDD를 만들어봅시다.
 2. RDD를 생성합니다.
    1. `parallelize()` 를 통해 범위(range)나 콜렉션 타입들을 RDD로 변환할 수 있습니다.
    2. 객체의 `textFile()` 메서드를 통해 데이터 모델을 RDD로 변환합니다.
@@ -47,7 +47,8 @@ rdd = sc.textFile(data_file) # 3
 
 Spark에는 `Transformation` 과 `Action`이라는 연산을 통해 데이터를 변환할 수 있습니다.
 
-* **Transformation** : 바꾼다는 의미가 아니라 **새로  RDD를 생성한다는 의미가 강합니다.** 이 작업을 수행할 때마다 연산 기록이 남게 됩니다.&#x20;
+*
+* **Transformation** : 바꾼다는 의미가 아니라 <mark style="color:orange;">**새로  RDD를 생성한다는 의미**</mark>**가 강합니다.** 이 작업을 수행할 때마다 연산 기록이 남게 됩니다. (연산에 대한 계획)
 * **Action** : 실제로 메모리에 올려 연산을 수행하는 작업입니다.
 
 <figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Spark Operations</p></figcaption></figure>

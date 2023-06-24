@@ -4,9 +4,13 @@
 
 <figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>Spark Component</p></figcaption></figure>
 
-Spark는 **대량의 데이터(Batch Data)를 쪼개 동시에 처리**할 수 있는 빅데이터 처리 엔진입니다. 이전에는 Hadoop을 사용했으나 속도면에서 워낙 Spark가 빠르기 때문에 Spark를 많이 사용하게 되었습니다.
+Spark는 <mark style="color:orange;">**대량의 데이터(Batch Data)를 쪼개 동시에 처리**</mark>할 수 있는 빅데이터 처리 엔진입니다. 이전에는 Hadoop을 사용했으나 속도면에서 워낙 Spark가 빠르기 때문에 Spark를 많이 사용하게 되었습니다.
 
 > 하둡(Hadoop)과 가장 큰 차이점으로는 디스크에서 읽고 처리하는 방식이 아닌 **메모리 안에서 데이터를 처리**한다는 점입니다.&#x20;
+
+> #### 💡 그렇다면 Pandas 보다 속도가 빠른가?
+>
+> Spark는 확장성을 위해 설계되었기 때문에 Pandas 속도보다는 느린편이다. 그러나 파일 크기가 증가할 수록 Pandas의 속도는 느려지고 Spark는 유지된다. [참고](https://databricks.com/blog/2018/05/03/benchmarking-apache-spark-on-a-single-node-machine.html)
 
 ## Structure
 
@@ -14,9 +18,15 @@ Spark는 **대량의 데이터(Batch Data)를 쪼개 동시에 처리**할 수 �
 
 위 구조를 자세히보면,&#x20;
 
-1. Driver Program(Python)이 Cluster Manager에게 신호를 보냅니다.
+1. Driver Program(Python)이 Cluster Manager에게 작업 신호를 보냅니다.
 2. Clutter Manager는 작업을 WorkerNode에게 분배를 합니다.
-3. 그렇다면 실질적으로 Executor가 연산을 하고 다시 Driver Program에게 전 을합니다. ( 1 CPU : 1 Worker Node)
+3. 그렇다면 실질적으로 Executor가 연산을 하고 다시 Driver Program에게 전달 합니다. ( 1 CPU : 1 Worker Node)
+
+| 드라이버 프로그램           | 클러스터 매니저               | 워커 노드                   |
+| ------------------- | ---------------------- | ----------------------- |
+| 작업을 생산해내는 역할        | 작업에 대한 스케줄링            | 실질적인 연산을 담당             |
+| RDD 생성              | 작업 분                   | 연산 결과를 Driver Program 전 |
+| Python, Java, Scala | Hadoop(Yarn), AWS(EMR) |                         |
 
 > Worker Node는 Cache를 공유하면서 작업의 속도를 높일 수 있어요.
 
