@@ -1,2 +1,0 @@
-# Adaptive Query Execution(AQE)
-
