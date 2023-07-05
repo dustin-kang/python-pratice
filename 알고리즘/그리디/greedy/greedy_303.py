@@ -1,5 +1,10 @@
-# https://www.acmicpc.net/problem/1439
+"""
+문자열 뒤집기
 
+0과 1로 이루어진 문자열을 뒤집기 위한 최소 횟수
+ https://www.acmicpc.net/problem/1439
+
+"""
 s = input()
 
 count0 = 0

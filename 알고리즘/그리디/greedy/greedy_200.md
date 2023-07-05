@@ -1,12 +1,5 @@
-# greed\_pratice
 
-> **INDEX**
->
-> * [큰 수의 법칙](greed\_pratice.md)
-> * [숫자 카드 게임](greed\_pratice.md)
-> * [1이 될때 까지](greed\_pratice.md)
-
-## \[실전1] 큰수의 법칙
+## [실전1] 큰수의 법칙
 
 > 큰 수의 법칙은 다양한 수로 이루어진 배열이 있을 때 주어진 수를 M번 더하여 가장 큰 수를 만드는 법칙이라고 합니다.
 
@@ -56,8 +49,6 @@ print()
 print(answer)
 ```
 
-### [📔answer](https://github.com/dustin-kang/Programming-Team-Notes/blob/Python/greedy/p\_big\_number.py)
-
 #### 반복되는 수열 찾기
 
 이 문제에서는 `6 6 6 5` 로 덧셈이 반복되는 걸 알 수 있습니다.
@@ -85,7 +76,7 @@ print(result)
 
 ***
 
-## \[실전2] 숫자 카드 게임
+## [실전2] 숫자 카드 게임
 
 > 여러가지 숫자 카드 중에서 가장 높은 숫자가 쓰인 카드 한장을 뽑는 게임입니다.
 
@@ -192,3 +183,6 @@ while True:
 result += (n-1)
 print(result)
 ```
+
+## with
+[무지의 먹방 라이브 - 2019 카카오 신입 공채](https://school.programmers.co.kr/learn/courses/30/lessons/42891)
