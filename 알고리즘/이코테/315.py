@@ -10,6 +10,18 @@ DFS/BFS - 특정 거리 도시찾기
 -> 4
 """
 
+"""
+먼저 그래프를 2차원 배열로 만든다.
+그다음 방문을 체크하기 위한 배열과 스택 배열을 생성한다.
+기존 x는 이미 방문을 한 상황이기 때문에 0으로 처리한다.
+
+이제 방문을 하나씩한다.
+스택에 넣어둔 첫 노드를 꺼내 이어진 노드들을 하나씩 가져온다.
+가져온 노드들의 방문이 첫방문인 경우에 거리를 +1 추가한다.
+그다음 다시 이어진 노드들을 스택에 넣고 (스택이 빌 때까지 )반복한다.
+
+"""
+
 n, m, k, x = map(int, input().split()) #도시, 도로, 특정 거리, 시작점
 
 # 💡 2차원 배열 만들기
@@ -35,7 +47,7 @@ def dfs(x, graph):
         node = stack.pop()
 
         for next_node in graph[node]:
-            if distance[next_node] == -1:
+            if distance[next_node] == -1: # 방문하는 노드가 처음 방문 하는 경우
                 distance[next_node] = distance[node] + 1
                 stack.append(next_node)
 
